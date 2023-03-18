@@ -58,8 +58,8 @@
                                 <td>
                                     {{ $loop->index +1 }}
                                 </td>
-                                <td>{{ $subject->sub_name }}</td>
-                                <td>{{ $subject->teacher->name }}</td>
+                                <td>{{ $subject->sub_name ?? '' }}</td>
+                                <td>{{ $subject->teacher->name ?? '' }}</td>
                                 <td>
                                     @if(auth()->user()->hasPermission('app.roles.create'))
                                     <a class="btn btn-info" data-toggle="modal" data-target="#subject_{{ $subject->id  }}"><i class="fas fa-edit text-white"></i></a>

@@ -33,12 +33,12 @@
             <form class="mg-b-20" action="{{ route('admin.manageMark.getResult') }}" method="post">
                 @csrf
                 <div class="row">
-                    <div class="col-3-xxxl col-xl-12 col-lg-12 col-12 inline-group">
+                    <div class=" col-xl-12 col-lg-12 col-12 inline-group">
                         <div class="row">
-                            <div class="col-4-xxxl col-xl-4 col-lg-3 col-12 form-group">
+                            <div class=" col-xl-4 col-lg-3 col-12 form-group">
                                 <label>Session</label>
                             </div>
-                            <div class="col-4-xxxl col-xl-4 col-lg-3 col-12 form-group">
+                            <div class=" col-xl-4 col-lg-3 col-12 form-group">
                                 <select class="form-control" name="session">
                                     <option selected>Select by Session</option>
                                     @foreach ($sessions as $session)
@@ -48,10 +48,10 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-4-xxxl col-xl-4 col-lg-3 col-12 form-group">
+                            <div class=" col-xl-4 col-lg-3 col-12 form-group">
                                 <label>Examination</label>
                             </div>
-                            <div class="col-4-xxxl col-xl-4 col-lg-3 col-12 form-group">
+                            <div class=" col-xl-4 col-lg-3 col-12 form-group">
                                 <select class="form-control" name="examination">
                                     <option selected>Select by Examination</option>
                                     @foreach ($examinations as $exam)
@@ -61,10 +61,10 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-4-xxxl col-xl-4 col-lg-3 col-12 form-group">
+                            <div class=" col-xl-4 col-lg-3 col-12 form-group">
                                 <label>Class</label>
                             </div>
-                            <div class="col-4-xxxl col-xl-4 col-lg-3 col-12 form-group">
+                            <div class=" col-xl-4 col-lg-3 col-12 form-group">
                                 <select class="form-control" name="class">
                                     <option selected>Select by class</option>
                                     @foreach ($classess as $class)
@@ -74,10 +74,10 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-4-xxxl col-xl-4 col-lg-3 col-12 form-group">
+                            <div class=" col-xl-4 col-lg-3 col-12 form-group">
                                 <label>Select Institute Or Individual Student Result</label>
                             </div>
-                            <div class="col-4-xxxl col-xl-4 col-lg-3 col-12 form-group">
+                            <div class=" col-xl-4 col-lg-3 col-12 form-group">
                                 <select class="form-control" name="type" id="individual">
                                     <option selected>Select by result type</option>
                                     <option value="individual">Individual Student Result</option>
@@ -86,27 +86,27 @@
                             </div>
                         </div>
                         <div class="row hide">
-                            <div class="col-4-xxxl col-xl-4 col-lg-3 col-12 form-group">
+                            <div class=" col-xl-4 col-lg-3 col-12 form-group">
                                 <label>Roll</label>
 
                             </div>
-                            <div class="col-4-xxxl col-xl-4 col-lg-3 col-12 form-group">
+                            <div class=" col-xl-4 col-lg-3 col-12 form-group">
                                 <input type="text" name="roll" placeholder="Search by roll ..." class="form-control">
                             </div>
                         </div>
                         <div class="row school-hide">
-                            <div class="col-4-xxxl col-xl-4 col-lg-3 col-12 form-group">
+                            <div class=" col-xl-4 col-lg-3 col-12 form-group">
                                 <label>School Id</label>
 
                             </div>
-                            <div class="col-4-xxxl col-xl-4 col-lg-3 col-12 form-group">
+                            <div class=" col-xl-4 col-lg-3 col-12 form-group">
                                 <input type="text" name="school_id" placeholder="Search by school Id ..." class="form-control">
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-1-xxxl col-xl-4 col-lg-4 col-12 form-group">
+                            <div class=" col-xl-4 col-lg-4 col-12 form-group">
                             </div>
-                            <div class="col-1-xxxl col-xl-2 col-lg-3 col-12 form-group">
+                            <div class=" col-xl-2 col-lg-3 col-12 form-group">
                                 <button type="submit" class="fw-btn-fill btn-gradient-yellow">Get Result</button>
                             </div>
                         </div>

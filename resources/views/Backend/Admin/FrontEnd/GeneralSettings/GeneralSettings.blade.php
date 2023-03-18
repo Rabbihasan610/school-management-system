@@ -19,40 +19,40 @@
 
     <!-- Breadcubs Area End Here -->
     <div class="row">
-        <div class="col-4-xxxl col-12">
+        <div class="col-12">
             <div class="card height-auto">
                 <div class="card-body">
 
                     <form action="{{ route('admin.general_settings.save') }}" method="POST" enctype="multipart/form-data">
                         @csrf
 
-                        <div class="col-12-xxxl col-lg-12 col-12 form-group">
+                        <div class="col-lg-12 col-12 form-group">
                             <label class="control-label" for="app_name">Website Name</label>
                             <input class="form-control" type="text" placeholder="Enter Website name" id="app_name"
                                 name="website_name" value="{{ $settings->website_name ?? '' }}" />
                         </div>
 
-                        <div class="col-12-xxxl col-lg-12 col-12 form-group">
+                        <div class="col-lg-12 col-12 form-group">
                             <label>School Email</label>
                             <input class="form-control" type="email" placeholder="Enter email" id="footer_text"
                                 name="email" value="{{ $settings->email ?? '' }}" />
                         </div>
-                        <div class="col-12-xxxl col-lg-12 col-12 form-group">
+                        <div class="col-lg-12 col-12 form-group">
                             <label>School Fax Number</label>
                             <input class="form-control" type="text" placeholder="Enter fax number" id="footer_text"
                                 name="fax" value="{{ $settings->fax ?? '' }}" />
                         </div>
-                        <div class="col-12-xxxl col-lg-12 col-12 form-group">
+                        <div class="col-lg-12 col-12 form-group">
                             <label>School Phone Number</label>
                             <input class="form-control" type="text" placeholder="Enter phone number" id="footer_text"
                                 name="phone" value="{{ $settings->phone ?? '' }}" />
                         </div>
-                        <div class="col-12-xxxl col-lg-12 col-12 form-group">
+                        <div class="col-xl-12 col-lg-12 col-12 form-group">
                             <label>School Address</label>
                             <input class="form-control" type="text" placeholder="Enter Address " id="footer_text"
                                 name="address" value="{{ $settings->address ?? '' }}" />
                         </div>
-                        <div class="col-12-xxxl col-lg-12 col-12 form-group">
+                        <div class="col-xl-12 col-lg-12 col-12 form-group">
                             <div class="row">
                                 <div class="form-group col-6">
                                     <label>Geo Latitude</label>
@@ -67,21 +67,21 @@
                             </div>
                         </div>
 
-                        <div class="col-12-xxxl col-lg-12 col-12 form-group">
+                        <div class="col-xl-12 col-lg-12 col-12 form-group">
                             <label>Footer Text</label>
                             <input class="form-control" type="text" placeholder="Enter footer text" id="footer_text"
                                 name="footer" value="{{ $settings->footer ?? '' }}" />
                         </div>
 
-                        <div class="col-12-xxxl col-lg-12 col-12 form-group">
+                        <div class="col-xl-12 col-lg-12 col-12 form-group">
 
                             <div class="row">
-                                <div class="col-12-xxxl col-lg-6 col-12 form-group">
+                                <div class="col-xl-12 col-lg-6 col-12 form-group">
                                     <div class="image-upload">
                                         <div class="thumb">
                                             <div class="avatar-preview">
                                                 <div class="row">
-                                                    <div class="col-12-xxxl col-lg-6 col-12 form-group">
+                                                    <div class="col-xl-6 col-lg-6 col-12 form-group">
 
                                                         @if (!empty($settings->logo))
                                                             <img class="img-thumbnail" src="{{ asset($settings->logo) }}"
@@ -100,7 +100,7 @@
                                                                 X 512 </span>
                                                         </div>
                                                     </div>
-                                                    <div class="col-12-xxxl col-lg-6 col-12 form-group">
+                                                    <div class="col-xl-6 col-lg-6 col-12 form-group">
                                                         @if (!empty($settings->favicon))
                                                             <img class="img-thumbnail" src="{{ asset($settings->favicon) }}"
                                                                 id="favicon" style="width: 200px; height: 200px;">

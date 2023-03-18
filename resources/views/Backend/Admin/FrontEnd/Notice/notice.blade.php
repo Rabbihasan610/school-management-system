@@ -85,7 +85,7 @@
                                                 <form id="update_form" method="post" action="{{route('admin.frontend.notice.update')}}" enctype="multipart/form-data">
                                                     @csrf
 
-                                                    <div class="col-4-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                                                    <div class=" col-xl-12 col-lg-12 col-12 form-group">
                                                         <label for="exampleInputEmail1">Title</label>
                                                         <input type="text" class="form-control" name="title" value="{{$notice->title}}" required >
                                                         <input type="hidden" class="form-control" name="id" value="{{$notice->id}}" >
@@ -96,14 +96,14 @@
 
 
 
-                                                    <div class="col-4-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                                                    <div class=" col-xl-12 col-lg-12 col-12 form-group">
                                                         <label for="exampleInputPassword1">Notice (PDF)</label>
                                                         <input type="file" class="form-control" name="notice"    >
 
                                                         {{--                                                            <input type="number" class="form-control" name="referral_bonus" value="{{$r->id}}" required>--}}
                                                     </div>
 
-                                                    <div class="col-4-xxxl col-xl-2 col-lg-3 col-12 form-group">
+                                                    <div class=" col-xl-2 col-lg-3 col-12 form-group">
                                                         <button type="submit" class="fw-btn-fill btn-gradient-yellow">Update</button>
                                                     </div>
 
@@ -152,7 +152,7 @@
                     <form id="contact_form" method="post" action="{{route('admin.frontend.notice.save')}}" enctype="multipart/form-data">
                         @csrf
 
-                        <div class="col-4-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                        <div class=" col-xl-12 col-lg-12 col-12 form-group">
                             <label for="exampleInputEmail1">Title</label>
                             <input type="text" class="form-control" name="title" value="" >
 
@@ -160,14 +160,14 @@
 
 
 
-                        <div class="col-4-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                        <div class=" col-xl-12 col-lg-12 col-12 form-group">
                             <label for="exampleInputPassword1">Notice (pdf)</label>
                             <input type="file" class="form-control" name="notice"  >
 
                         </div>
 
 
-                        <div class="col-4-xxxl col-xl-2 col-lg-3 col-12 form-group">
+                        <div class=" col-xl-2 col-lg-3 col-12 form-group">
 
 
                         <button type="submit" class="fw-btn-fill btn-gradient-yellow">Save</button>

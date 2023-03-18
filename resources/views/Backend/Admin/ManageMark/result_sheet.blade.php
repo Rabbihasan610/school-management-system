@@ -118,10 +118,10 @@
                                         @case($total_mark >= 40 && $total_mark <= 49)
                                              C
                                              @break
-                                        @case($total_mark >= 33 && $total_mark <= 49)
+                                        @case($total_mark >= 33 && $total_mark <= 39)
                                              D
                                              @break
-                                        @case($total_mark < 33)
+                                        @case($total_mark <= 32 && $total_mark < 0)
                                              F
                                              @break
                                         @default

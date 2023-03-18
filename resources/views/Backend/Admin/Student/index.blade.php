@@ -100,7 +100,7 @@ Current Session: <span id="currentSessionHtml">{{ $current_session->session }}</
                         @foreach ($current_ses_students as $cs_student)
                             <tr>
                                 <td>{{ $loop->index +1 }}</td>
-                                <td>{{ $cs_student->student_name_eng }}</td>
+                                <td>{{ $cs_student->student_name }}</td>
                                 <td>{{ $cs_student->class }}</td>
                                 <td>{{ $cs_student->class_roll }}</td>
                                 <td>
@@ -152,7 +152,7 @@ Current Session: <span id="currentSessionHtml">{{ $current_session->session }}</
                         $.each(data, function(key, value){
                             td += "<tr>";
                             td += "<td>"+key+"</td>";
-                            td +="<td>"+value.student_name_eng+"</td>";
+                            td +="<td>"+value.student_name+"</td>";
                             td +="<td>"+value.class+"</td>";
                             td +="<td>"+value.class_roll+"</td>";
                             td +="<td>";

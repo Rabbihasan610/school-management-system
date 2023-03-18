@@ -117,25 +117,25 @@
                                                 <form id="update_form" method="post" action="{{route('admin.frontend.event.update')}}" enctype="multipart/form-data">
                                                     @csrf
 
-                                                    <div class="col-1-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                                                    <div class=" col-xl-12 col-lg-12 col-12 form-group">
                                                         <label for="exampleInputEmail1">Title</label>
                                                         <input type="text" class="form-control" name="title" value="{{$event->title}}" required >
                                                         <input type="hidden" class="form-control" name="id" value="{{$event->id}}" >
 
                                                     </div>
 
-                                                    <div class="col-1-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                                                    <div class=" col-xl-12 col-lg-12 col-12 form-group">
                                                         <label for="exampleInputEmail1">Event Details</label>
                                                         <textarea type="text" class="form-control" name="event_details" style="height: 20px" id="editor_{{$event->id}}" required >{!! $event->details !!}</textarea>
 
                                                     </div>
-                                                    <div class="col-1-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                                                    <div class=" col-xl-12 col-lg-12 col-12 form-group">
                                                         <label for="exampleInputPassword1">Event Date</label>
                                                         <input type="date" class="form-control" name="event_date" required value="{{$event->event_date}}">
                                                     </div>
 
 
-                                                    <div class="col-1-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                                                    <div class=" col-xl-12 col-lg-12 col-12 form-group">
                                                         <label for="exampleInputPassword1">Image</label>
                                                         <input type="file" class="form-control" name="image"   onchange="loadFile_{{$event->id}}(event)" >
                                                         @if($event->image)
@@ -147,7 +147,7 @@
                                                     </div>
 
 
-                                                    <div class="col-1-xxxl col-xl-2 col-lg-3 col-12 form-group">
+                                                    <div class=" col-xl-2 col-lg-3 col-12 form-group">
                                                         <button type="submit" class="fw-btn-fill btn-gradient-yellow">Update</button>
                                                     </div>
 
@@ -197,33 +197,33 @@
                     <form id="contact_form" method="post" action="{{route('admin.frontend.event.save')}}" enctype="multipart/form-data">
                         @csrf
 
-                        <div class="col-1-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                        <div class=" col-xl-12 col-lg-12 col-12 form-group">
                             <label for="exampleInputEmail1">Title</label>
                             <input type="text" class="form-control" name="title" value="" >
 
                         </div>
 
-                        <div class="col-1-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                        <div class=" col-xl-12 col-lg-12 col-12 form-group">
                             <label for="exampleInputEmail1">Event Details</label>
                             <textarea type="text" class="form-control" name="event_details" style="height: 20px" id="editor" ></textarea>
 
                         </div>
-                        <div class="col-1-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                        <div class=" col-xl-12 col-lg-12 col-12 form-group">
                             <label for="exampleInputPassword1">Event Date</label>
                             <input type="date" class="form-control" name="event_date" required>
                             {{--                                                            <input type="number" class="form-control" name="referral_bonus" value="{{$event->id}}" required>--}}
                         </div>
 
-                        <div class="col-1-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                        <div class=" col-xl-12 col-lg-12 col-12 form-group">
                             <label for="exampleInputPassword1">Image</label>
                             <input type="file" class="form-control" name="image"  onchange="loadFile(event)" >
                             {{--                                                            <input type="number" class="form-control" name="referral_bonus" value="{{$event->id}}" required>--}}
                         </div>
-                        <div class="col-1-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                        <div class=" col-xl-12 col-lg-12 col-12 form-group">
                             <img src="{{asset('assets/backend/img/default.jpg')}}" alt="" width="150px" height="150px" id="output">
                         </div>
 
-                        <div class="col-1-xxxl col-xl-2 col-lg-3 col-12 form-group">
+                        <div class=" col-xl-2 col-lg-3 col-12 form-group">
                             <button type="submit" class="fw-btn-fill btn-gradient-yellow">Save</button>
                         </div>
 

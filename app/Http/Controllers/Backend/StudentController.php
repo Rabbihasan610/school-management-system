@@ -107,253 +107,179 @@ class StudentController extends Controller
         //        end multi school
 
 
-        // return $request->all();
+        //return $request->all();
 
         $request->validate([
             "email" => "required|string|unique:students,email",
-            "password" => "required|confirmed|min:5",
+            "password" => "required|min:5",
         ]);
+
         $role = Role::where('slug','student')->first();
 
-        $table_name = $request->session_year . '_' . $request->class . '_students';
+        $table_name = $request->session . '_' . $request->class . '_students';
         $directory_student = 'assets/backend/img/student/';
         $image = $request->file('image');
         //        return $image;
 
         $image_url = image_upload($image, $directory_student, 300, 300);
 
-        $doc1 = $request->file('doc1');
-        $doc2 = $request->file('doc2');
-        $doc3 = $request->file('doc3');
-        $doc4 = $request->file('doc4');
-
-        $directory_student_file = 'assets/backend/img/student/file/';
-
-        if($doc1){
-            $doc1_url = file_upload($doc1, $directory_student_file);
-        }
-
-        if($doc2){
-            $doc2_url = file_upload($doc2, $directory_student_file);
-        }
-
-        if($doc3){
-            $doc3_url = file_upload($doc3, $directory_student_file);
-
-        }
-
-        if($doc4){
-            $doc4_url = file_upload($doc4, $directory_student_file);
-        }
-
-        // $doc1_url = file_upload($doc1, $directory_student_file);
-        // $doc2_url = file_upload($doc2, $directory_student_file);
-        // $doc3_url = file_upload($doc3, $directory_student_file);
-        // $doc4_url = file_upload($doc4, $directory_student_file);
 
         if (Schema::hasTable($table_name)) {
+
+
             $std = new Student();
             $std->role_id = $role->id;
             $std->email = $request->email;
             $std->password = Hash::make($request->password);
-            $std->school_id =  $request->school_id;
-            $std->institute_name =  $request->institute_name;
-            $std->branch =  $request->branch;
-            $std->course =  $request->course;
-            $std->trade =  $request->trade;
             $std->class_roll = $request->class_roll;
             $std->class =  $request->class;
-            $std->group =  $request->group;
-            $std->technology =  $request->technology;
-            $std->semester =  $request->semester;
-            $std->session =  $request->session_year;
-            $std->student_name_eng = $request->student_name_eng;
-            $std->student_name_ban =  $request->student_name_ban;
-            $std->student_phone_1 = $request->student_phone_1;
-            $std->student_phone_2 =  $request->student_phone_2;
-            $std->father_name_eng =  $request->father_name_eng;
-            $std->father_name_ban =  $request->father_name_ban;
-            $std->father_phone_1 =  $request->father_phone_1;
-            $std->father_phone_2 =  $request->father_phone_2;
-            $std->mother_name_eng =  $request->mother_name_eng;
-            $std->mother_name_ban =  $request->mother_name_ban;
-            $std->mother_phone_1 =  $request->mother_phone_1;
-            $std->mother_phone_2 =  $request->mother_phone_2;
-            $std->zila = $request->zila;
-            $std->upzila =  $request->upzila;
-            $std->union =  $request->union;
-            $std->post =  $request->post;
-            $std->ward =  $request->ward;
-            $std->village =  $request->village;
-            $std->para =  $request->para;
-            $std->g_zila =  $request->g_zila;
-            $std->g_upzila =  $request->g_upzila;
-            $std->g_union =  $request->g_union;
-            $std->g_post =  $request->g_post;
-            $std->g_ward =  $request->g_ward;
-            $std->g_village =  $request->g_village;
-            $std->g_para =  $request->g_para;
-            $std->loc_name =  $request->loc_name;
-            $std->loc_relation =  $request->loc_relation;
-            $std->loc_phone =  $request->loc_phone;
-            $std->loc_zila =  $request->loc_zila;
-            $std->loc_upzila =  $request->loc_upzila;
-            $std->loc_union =  $request->loc_union;
-            $std->loc_post =  $request->loc_post;
-            $std->loc_ward =  $request->loc_ward;
-            $std->loc_village =  $request->loc_village;
-            $std->loc_para =  $request->loc_para;
-            $std->full_course_fee = $request->full_course_fee;
-            $std->semester_fee =  $request->semester_fee;
-            $std->internship_fee =  $request->internship_fee;
-            $std->agreement =  $request->agreement;
-            $std->remarks =  $request->remarks;
-            $std->other_activities = $request->other_activities;
-            $std->image = $image_url;
-            $std->doc1 = isset($doc1_url) ? $doc1_url : ' ';
-            $std->doc2 = isset($doc2_url) ? $doc2_url : ' ';
-            $std->doc3 = isset($doc3_url) ? $doc3_url : ' ';
-            $std->doc4 = isset($doc4_url) ? $doc4_url : ' ';
+            $std->section =  $request->section;
+            $std->session =  $request->session;
+            $std->student_name = $request->student_name;
+            $std->student_name_bn =  $request->student_name_bn;
+            $std->birth_certificate_number = $request->birth_certificate_number;
+            $std->dob = $request->dob;
+            $std->nationality = $request->nationality;
+            $std->religion = $request->religion;
+            $std->blood_group = $request->blood_group;
+            $std->gender = $request->gender;
+            $std->permanent_address = $request->permanent_address;
+            $std->p_post_code =  $request->p_post_code;
+            $std->p_district =  $request->p_district;
+            $std->p_thana =  $request->p_thana;
+            $std->persent_address =  $request->persent_address;
+            $std->pre_post_code =  $request->pre_post_code;
+            $std->pre_district =  $request->pre_district;
+            $std->pre_thana =  $request->pre_thana;
+            $std->father_name =  $request->father_name;
+            $std->father_nid =  $request->father_nid;
+            $std->father_occuoation =  $request->father_occuoation;
+            $std->father_mobile_no =  $request->father_mobile_no;
+            $std->father_email =  $request->father_email;
+            $std->mother_name =  $request->mother_name;
+            $std->mother_nid =  $request->mother_nid;
+            $std->mother_occopation =  $request->mother_occopation;
+            $std->mother_mobile_no =  $request->mother_mobile_no;
+            $std->mother_email =  $request->mother_email;
+            $std->local_guardian_name =  $request->local_guardian_name;
+            $std->local_guardian_nid =  $request->local_guardian_nid;
+            $std->local_guardian_relation =  $request->local_guardian_relation;
+            $std->local_guardian_mobile_no =  $request->local_guardian_mobile_no;
+            $std->local_guardian_email =  $request->local_guardian_email;
+            $std->previous_institute_name =  $request->previous_institute_name;
+            $std->previous_class = $request->previous_class;
+            $std->previous_institute_address =  $request->previous_institute_address;
+            $std->previuous_result =  $request->previuous_result;
+            $std->student_phone_number =  $request->student_phone_number;
+            $std->image =  $image_url;
+
 
             $std->save();
+
+            $studentStmt = Student::find($std->id);
+            $nextPrimaryKeyId = $studentStmt->id + 1;
+            $student_id = str_pad($nextPrimaryKeyId, 6, 0);
+
+            $studentStmt->student_id = $student_id;
+            $studentStmt->save();
 
 
             //            return $std;
 
             DB::table($table_name)->insert([
-                'student_id' => $std->id,
+                'student_id' => $studentStmt->student_id,
                 'roll'       => $std->class_roll,
                 'image'      => $image_url,
-                'stu_name'   => $request->student_name_eng,
+                'stu_name'   => $request->student_name,
                 'class'      => $request->class,
-                'section'    => $request->group,
+                'section'    => $request->section,
             ]);
 
-            if ($request->has('exam_name')) {
 
-                for ($a = 0; $a < count($request->exam_name); $a++) {
-                    if ($request->exam_name[$a] && $request->department[$a] && $request->board[$a] && $request->exam_roll[$a] && $request->reg[$a] && $request->gpa[$a] && $request->passing_year[$a]) {
-                        $education = new EducationQualifications();
-                        $education->student_id = $std->id;
-                        $education->exam_name = $request->exam_name[$a];
-                        $education->department = $request->department[$a];
-                        $education->board = $request->board[$a];
-                        $education->exam_roll = $request->exam_roll[$a];
-                        $education->reg = $request->reg[$a];
-                        $education->gpa = $request->gpa[$a];
-                        $education->passing_year = $request->passing_year[$a];
-                        $education->save();
-                    }
-                }
-            }
         } else {
             Schema::create($table_name, function ($table) {
                 $table->increments('id');
-                $table->unsignedBigInteger('student_id')->nullable();
+                $table->string('student_id');
                 $table->string('roll')->nullable();
                 $table->string('image')->nullable();
                 $table->string('stu_name')->nullable();
                 $table->string('class')->nullable();
                 $table->string('section')->nullable();
-                $table->foreign('student_id')->references('id')->on('students')->onDelete('cascade');
             });
 
 
+
             $std = new Student();
+
+
 
             $std->role_id = $role->id;
             $std->email = $request->email;
             $std->password = Hash::make($request->password);
 
 
-            $std->school_id =  $request->school_id;
-            $std->institute_name =  $request->institute_name;
-            $std->branch =  $request->branch;
-            $std->course =  $request->course;
-            $std->trade =  $request->trade;
             $std->class_roll = $request->class_roll;
             $std->class =  $request->class;
-            $std->group =  $request->group;
-            $std->technology =  $request->technology;
-            $std->semester =  $request->semester;
-            $std->session =  $request->session_year;
-            $std->student_name_eng = $request->student_name_eng;
-            $std->student_name_ban =  $request->student_name_ban;
-            $std->student_phone_1 = $request->student_phone_1;
-            $std->student_phone_2 =  $request->student_phone_2;
-            $std->father_name_eng =  $request->father_name_eng;
-            $std->father_name_ban =  $request->father_name_ban;
-            $std->father_phone_1 =  $request->father_phone_1;
-            $std->father_phone_2 =  $request->father_phone_2;
-            $std->mother_name_eng =  $request->mother_name_eng;
-            $std->mother_name_ban =  $request->mother_name_ban;
-            $std->mother_phone_1 =  $request->mother_phone_1;
-            $std->mother_phone_2 =  $request->mother_phone_2;
-            $std->zila = $request->zila;
-            $std->upzila =  $request->upzila;
-            $std->union =  $request->union;
-            $std->post =  $request->post;
-            $std->ward =  $request->ward;
-            $std->village =  $request->village;
-            $std->para =  $request->para;
-            $std->g_zila =  $request->g_zila;
-            $std->g_upzila =  $request->g_upzila;
-            $std->g_union =  $request->g_union;
-            $std->g_post =  $request->g_post;
-            $std->g_ward =  $request->g_ward;
-            $std->g_village =  $request->g_village;
-            $std->g_para =  $request->g_para;
-            $std->loc_name =  $request->loc_name;
-            $std->loc_relation =  $request->loc_relation;
-            $std->loc_phone =  $request->loc_phone;
-            $std->loc_zila =  $request->loc_zila;
-            $std->loc_upzila =  $request->loc_upzila;
-            $std->loc_union =  $request->loc_union;
-            $std->loc_post =  $request->loc_post;
-            $std->loc_ward =  $request->loc_ward;
-            $std->loc_village =  $request->loc_village;
-            $std->loc_para =  $request->loc_para;
-            $std->full_course_fee = $request->full_course_fee;
-            $std->semester_fee =  $request->semester_fee;
-            $std->internship_fee =  $request->internship_fee;
-            $std->agreement =  $request->agreement;
-            $std->remarks =  $request->remarks;
-            $std->other_activities = $request->other_activities;
-            $std->image = $image_url;
-            $std->doc1 = isset($doc1_url) ? $doc1_url : ' ';
-            $std->doc2 = isset($doc2_url) ? $doc2_url : ' ';
-            $std->doc3 = isset($doc3_url) ? $doc3_url : ' ';
-            $std->doc4 = isset($doc4_url) ? $doc4_url : ' ';
-
+            $std->section =  $request->section;
+            $std->session =  $request->session;
+            $std->student_name = $request->student_name;
+            $std->student_name_bn =  $request->student_name_bn;
+            $std->birth_certificate_number = $request->birth_certificate_number;
+            $std->dob = $request->dob;
+            $std->nationality = $request->nationality;
+            $std->religion = $request->religion;
+            $std->blood_group = $request->blood_group;
+            $std->gender = $request->gender;
+            $std->permanent_address = $request->permanent_address;
+            $std->p_post_code =  $request->p_post_code;
+            $std->p_district =  $request->p_district;
+            $std->p_thana =  $request->p_thana;
+            $std->persent_address =  $request->persent_address;
+            $std->pre_post_code =  $request->pre_post_code;
+            $std->pre_district =  $request->pre_district;
+            $std->pre_thana =  $request->pre_thana;
+            $std->father_name =  $request->father_name;
+            $std->father_nid =  $request->father_nid;
+            $std->father_occuoation =  $request->father_occuoation;
+            $std->father_mobile_no =  $request->father_mobile_no;
+            $std->father_email =  $request->father_email;
+            $std->mother_name =  $request->mother_name;
+            $std->mother_nid =  $request->mother_nid;
+            $std->mother_occopation =  $request->mother_occopation;
+            $std->mother_mobile_no =  $request->mother_mobile_no;
+            $std->mother_email =  $request->mother_email;
+            $std->local_guardian_name =  $request->local_guardian_name;
+            $std->local_guardian_nid =  $request->local_guardian_nid;
+            $std->local_guardian_relation =  $request->local_guardian_relation;
+            $std->local_guardian_mobile_no =  $request->local_guardian_mobile_no;
+            $std->local_guardian_email =  $request->local_guardian_email;
+            $std->previous_institute_name =  $request->previous_institute_name;
+            $std->previous_class = $request->previous_class;
+            $std->previous_institute_address =  $request->previous_institute_address;
+            $std->previuous_result =  $request->previuous_result;
+            $std->student_phone_number =  $request->student_phone_number;
+            $std->image =  $image_url;
             $std->save();
+
+            $studentStmt = Student::find($std->id);
+            $nextPrimaryKeyId = $studentStmt->id + 1;
+            $student_id = str_pad($nextPrimaryKeyId, 6, 0);
+
+            $studentStmt->student_id = $student_id;
+            $studentStmt->save();
+
 
 
             $std2 = DB::table($table_name)->insert([
-                'student_id' => $std->id,
+                'student_id' => $studentStmt->student_id,
                 'roll'       => $std->class_roll,
                 'image'      => $image_url,
-                'stu_name'   => $request->student_name_eng,
+                'stu_name'   => $request->student_name,
                 'class'      => $request->class,
-                'section'    => $request->group,
+                'section'    => $request->section,
             ]);
 
-            if ($request->has('exam_name')) {
-                for ($a = 0; $a < count($request->exam_name); $a++) {
-                    if ($request->exam_name[$a] && $request->department[$a] && $request->board[$a] && $request->exam_roll[$a] && $request->reg[$a] && $request->gpa[$a] && $request->passing_year[$a]) {
-                        $education = new EducationQualifications();
-                        $education->student_id = $std->id;
-                        $education->exam_name = $request->exam_name[$a];
-                        $education->department = $request->department[$a];
-                        $education->board = $request->board[$a];
-                        $education->exam_roll = $request->exam_roll[$a];
-                        $education->reg = $request->reg[$a];
-                        $education->gpa = $request->gpa[$a];
-                        $education->passing_year = $request->passing_year[$a];
-                        $education->save();
-                    }
-                }
 
-            }
         }
 
         Toastr::success('New Student  Added Successfully', 'Success', ["positionClass" => "toast-top-right"]);

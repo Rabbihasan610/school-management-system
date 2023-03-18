@@ -154,7 +154,7 @@
 
 
 
-                                                            <button type="submit" class="btn btn-primary">Update</button>
+                                                            <button type="submit" class="btn-fill-lg btn-gradient-yellow btn-hover-bluedark">Update</button>
 
                                                         </form>
                                                     </div>
@@ -232,7 +232,7 @@
                         </div>
 
 
-                        <button type="submit" class="btn btn-primary">Save</button>
+                        <button type="submit" class="btn-fill-lg btn-gradient-yellow btn-hover-bluedark">Save</button>
 
                     </form>
                 </div>

@@ -77,22 +77,22 @@
                                     <div class="modal-body">
                                         <form id="class_form" method="post" action="{{route('admin.section.update')}}" enctype="multipart/form-data">
                                             @csrf
-                                            <div class="col-1-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                                            <div class=" col-xl-12 col-lg-12 col-12 form-group">
                                                 <label for="tradeTitle">Section Name</label>
                                                 <input type="hidden" name="id" value="{{ $section->id }}"/>
                                                 <input type="text" name="section_name" value="{{ $section->section_name }}" class="form-control" placeholder="Section Name" id="courseTitle">
                                             </div>
-                                            <div class="col-1-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                                            <div class=" col-xl-12 col-lg-12 col-12 form-group">
                                                 <label for="tradeCode">Class Name</label>
                                                 <select class="form-control" name="class_id"  required>
 
                                                     @foreach($classes as $class)
-                                                    <option {{ $class->id == $section->class_id ? "selected" : '' }} value="{{$class->id}}">{{$class->class_name}}</option>
+                                                    <option {{ $class->class_name_numeric == $section->class_id ? "selected" : '' }} value="{{$class->class_name_numeric}}">{{$class->class_name}}</option>
                                                     @endforeach
                                                 </select>
                                             </div>
 
-                                            <div class="col-1-xxxl col-xl-3 col-lg-4 col-12 form-group">
+                                            <div class=" col-xl-3 col-lg-4 col-12 form-group">
                                                 <input type="submit" class="fw-btn-fill btn-gradient-yellow" value="Update Section">
                                             </div>
                                         </form>
@@ -119,11 +119,11 @@
                 <div class="modal-body">
                     <form id="class_form" method="post" action="{{route('admin.section.add')}}" enctype="multipart/form-data">
                         @csrf
-                        <div class="col-1-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                        <div class=" col-xl-12 col-lg-12 col-12 form-group">
                             <label for="tradeTitle">Section Name</label>
                             <input type="text" name="section_name" class="form-control" placeholder="Section Name" id="courseTitle">
                         </div>
-                        <div class="col-1-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                        <div class=" col-xl-12 col-lg-12 col-12 form-group">
                             <label for="tradeCode">Class Name</label>
                             <select class="form-control" name="class_id" required>
 
@@ -133,7 +133,7 @@
                             </select>
                         </div>
 
-                        <div class="col-1-xxxl col-xl-3 col-lg-4 col-12 form-group">
+                        <div class=" col-xl-3 col-lg-4 col-12 form-group">
                             <input type="submit" class="fw-btn-fill btn-gradient-yellow" value="Add Section">
                         </div>
                     </form>
