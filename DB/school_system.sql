@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 03, 2022 at 09:16 AM
--- Server version: 10.4.24-MariaDB
--- PHP Version: 7.4.29
+-- Generation Time: Mar 18, 2023 at 05:49 PM
+-- Server version: 10.4.11-MariaDB
+-- PHP Version: 7.4.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -18,8 +19,196 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `demoschoolmanagementsystem`
+-- Database: `school_system`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `2019-2020_3_students`
+--
+
+CREATE TABLE `2019-2020_3_students` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `student_id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `roll` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `stu_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `class` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `section` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `2019-2020_3_students`
+--
+
+INSERT INTO `2019-2020_3_students` (`id`, `student_id`, `roll`, `image`, `stu_name`, `class`, `section`) VALUES
+(1, '220000', '714', 'assets/backend/img/student/64144ba90f77bWhatsApp Image 2023-03-13 at 1.09.38 PM.jpeg', 'Angela Henry', '3', '3');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `2019-2020_4_students`
+--
+
+CREATE TABLE `2019-2020_4_students` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `student_id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `roll` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `stu_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `class` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `section` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `2019-2020_4_students`
+--
+
+INSERT INTO `2019-2020_4_students` (`id`, `student_id`, `roll`, `image`, `stu_name`, `class`, `section`) VALUES
+(1, '270000', '64', 'assets/backend/img/student/64144beb00f06WhatsApp Image 2023-03-13 at 1.09.38 PM.jpeg', 'Belle Newman', '4', '5');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `2019-2020_5_students`
+--
+
+CREATE TABLE `2019-2020_5_students` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `student_id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `roll` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `stu_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `class` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `section` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `2019-2020_5_students`
+--
+
+INSERT INTO `2019-2020_5_students` (`id`, `student_id`, `roll`, `image`, `stu_name`, `class`, `section`) VALUES
+(1, '240000', '174', 'assets/backend/img/student/64144bc0be6bcWhatsApp Image 2023-03-13 at 1.09.38 PM.jpeg', 'Samantha Mendez', '5', '6');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `2019-2020_7_students`
+--
+
+CREATE TABLE `2019-2020_7_students` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `student_id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `roll` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `stu_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `class` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `section` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `2019-2020_7_students`
+--
+
+INSERT INTO `2019-2020_7_students` (`id`, `student_id`, `roll`, `image`, `stu_name`, `class`, `section`) VALUES
+(1, '300000', '882', 'assets/backend/img/student/64144a5413c3aIMG_20220105_135448.jpg', 'Zena Massey', '7', '10'),
+(2, '210000', '977', 'assets/backend/img/student/64144b9a82399WhatsApp Image 2023-03-13 at 1.09.38 PM.jpeg', 'Noah Noel', '7', '10'),
+(3, '250000', '138', 'assets/backend/img/student/64144bcc28aa2WhatsApp Image 2023-03-13 at 1.09.38 PM.jpeg', 'Luke Long', '7', '10');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `2019-2020_8_students`
+--
+
+CREATE TABLE `2019-2020_8_students` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `student_id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `roll` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `stu_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `class` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `section` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `2019-2020_8_students`
+--
+
+INSERT INTO `2019-2020_8_students` (`id`, `student_id`, `roll`, `image`, `stu_name`, `class`, `section`) VALUES
+(1, '170000', '456', 'assets/backend/img/student/64144b341e404WhatsApp Image 2023-03-13 at 1.09.38 PM.jpeg', 'Judith Cote', '8', '11'),
+(2, '280000', '561', 'assets/backend/img/student/64144bf94ce36WhatsApp Image 2023-03-13 at 1.09.38 PM.jpeg', 'Hyatt Lindsey', '8', '11');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `2019-2020_9_students`
+--
+
+CREATE TABLE `2019-2020_9_students` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `student_id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `roll` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `stu_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `class` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `section` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `2019-2020_9_students`
+--
+
+INSERT INTO `2019-2020_9_students` (`id`, `student_id`, `roll`, `image`, `stu_name`, `class`, `section`) VALUES
+(1, '120000', '953', 'assets/backend/img/student/64144ae51cea4WhatsApp Image 2023-03-13 at 1.09.38 PM.jpeg', 'Abra Delgado', '9', '13');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `2020-2021_2_students`
+--
+
+CREATE TABLE `2020-2021_2_students` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `student_id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `roll` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `stu_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `class` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `section` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `2020-2021_2_students`
+--
+
+INSERT INTO `2020-2021_2_students` (`id`, `student_id`, `roll`, `image`, `stu_name`, `class`, `section`) VALUES
+(1, '160000', '975', 'assets/backend/img/student/64144b1ece807WhatsApp Image 2023-03-13 at 1.09.38 PM.jpeg', 'Sawyer Gaines', '2', '1'),
+(2, '200000', '542', 'assets/backend/img/student/64144b8d73650WhatsApp Image 2023-03-13 at 1.09.38 PM.jpeg', 'Karina Rios', '2', '1');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `2020-2021_3_students`
+--
+
+CREATE TABLE `2020-2021_3_students` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `student_id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `roll` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `stu_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `class` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `section` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `2020-2021_3_students`
+--
+
+INSERT INTO `2020-2021_3_students` (`id`, `student_id`, `roll`, `image`, `stu_name`, `class`, `section`) VALUES
+(1, '260000', '703', 'assets/backend/img/student/64144bdecfc30WhatsApp Image 2023-03-13 at 1.09.38 PM.jpeg', 'Macey Rios', '3', '3');
 
 -- --------------------------------------------------------
 
@@ -29,7 +218,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `2020-2021_4_students` (
   `id` int(10) UNSIGNED NOT NULL,
-  `student_id` bigint(20) UNSIGNED DEFAULT NULL,
+  `student_id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `roll` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `stu_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -42,7 +231,102 @@ CREATE TABLE `2020-2021_4_students` (
 --
 
 INSERT INTO `2020-2021_4_students` (`id`, `student_id`, `roll`, `image`, `stu_name`, `class`, `section`) VALUES
-(1, 2, '500', 'assets/backend/img/student/6383382d7b210download (6).jpg', 'jodigutira@mailinator.com', '4', '6');
+(1, '700000', '387', 'assets/backend/img/student/64144aa0e4999WhatsApp Image 2023-03-13 at 1.09.38 PM.jpeg', 'Tanisha Roach', '4', '5'),
+(2, '180000', '242', 'assets/backend/img/student/64144b70a9209WhatsApp Image 2023-03-13 at 1.09.38 PM.jpeg', 'Thomas Sloan', '4', '5');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `2020-2021_5_students`
+--
+
+CREATE TABLE `2020-2021_5_students` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `student_id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `roll` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `stu_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `class` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `section` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `2020-2021_5_students`
+--
+
+INSERT INTO `2020-2021_5_students` (`id`, `student_id`, `roll`, `image`, `stu_name`, `class`, `section`) VALUES
+(1, '900000', '639', 'assets/backend/img/student/64144abae6739WhatsApp Image 2023-03-13 at 1.09.38 PM.jpeg', 'Avye Rodriguez', '5', '6'),
+(2, '190000', '796', 'assets/backend/img/student/64144b8163bacWhatsApp Image 2023-03-13 at 1.09.38 PM.jpeg', 'Judith Monroe', '5', '6');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `2020-2021_6_students`
+--
+
+CREATE TABLE `2020-2021_6_students` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `student_id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `roll` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `stu_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `class` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `section` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `2020-2021_6_students`
+--
+
+INSERT INTO `2020-2021_6_students` (`id`, `student_id`, `roll`, `image`, `stu_name`, `class`, `section`) VALUES
+(1, '110000', '173', 'assets/backend/img/student/64144ad8aa5c5WhatsApp Image 2023-03-13 at 1.09.38 PM.jpeg', 'Lucas Douglas', '6', '7');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `2020-2021_7_students`
+--
+
+CREATE TABLE `2020-2021_7_students` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `student_id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `roll` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `stu_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `class` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `section` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `2020-2021_7_students`
+--
+
+INSERT INTO `2020-2021_7_students` (`id`, `student_id`, `roll`, `image`, `stu_name`, `class`, `section`) VALUES
+(1, '130000', '946', 'assets/backend/img/student/64144af5716d3WhatsApp Image 2023-03-13 at 1.09.38 PM.jpeg', 'Cherokee Herring', '7', '10');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `2020-2021_10_students`
+--
+
+CREATE TABLE `2020-2021_10_students` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `student_id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `roll` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `stu_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `class` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `section` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `2020-2021_10_students`
+--
+
+INSERT INTO `2020-2021_10_students` (`id`, `student_id`, `roll`, `image`, `stu_name`, `class`, `section`) VALUES
+(1, '150000', '19', 'assets/backend/img/student/64144b11653a8WhatsApp Image 2023-03-13 at 1.09.38 PM.jpeg', 'Kellie Irwin', '10', '16'),
+(2, '230000', '491', 'assets/backend/img/student/64144bb4e7ca9WhatsApp Image 2023-03-13 at 1.09.38 PM.jpeg', 'Mason Daniel', '10', '16');
 
 -- --------------------------------------------------------
 
@@ -52,7 +336,7 @@ INSERT INTO `2020-2021_4_students` (`id`, `student_id`, `roll`, `image`, `stu_na
 
 CREATE TABLE `2021-2022_2_students` (
   `id` int(10) UNSIGNED NOT NULL,
-  `student_id` bigint(20) UNSIGNED DEFAULT NULL,
+  `student_id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `roll` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `stu_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -65,8 +349,171 @@ CREATE TABLE `2021-2022_2_students` (
 --
 
 INSERT INTO `2021-2022_2_students` (`id`, `student_id`, `roll`, `image`, `stu_name`, `class`, `section`) VALUES
-(1, 1, '101', 'assets/backend/img/student/6381ce41cc10cdownload (3).jpg', 'vufovolifa@mailinator.com', '2', '3'),
-(2, 3, '202', 'assets/backend/img/student/638add3471cf8Screenshot (7).png', 'Surjo', '2', '3');
+(1, '800000', '394', 'assets/backend/img/student/64144aaeeb61aWhatsApp Image 2023-03-13 at 1.09.38 PM.jpeg', 'Ursa Navarro', '2', '1');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `2021-2022_4_attandence`
+--
+
+CREATE TABLE `2021-2022_4_attandence` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `roll` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `session_year` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `class_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `section` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `student_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `attendance` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'absent',
+  `date` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `2021-2022_4_attandence`
+--
+
+INSERT INTO `2021-2022_4_attandence` (`id`, `roll`, `session_year`, `class_name`, `section`, `student_name`, `attendance`, `date`) VALUES
+(1, '194', '2021-2022', '4', '5', 'Kelly Bryan', 'present', '2023-03-18');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `2021-2022_4_students`
+--
+
+CREATE TABLE `2021-2022_4_students` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `student_id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `roll` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `stu_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `class` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `section` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `2021-2022_4_students`
+--
+
+INSERT INTO `2021-2022_4_students` (`id`, `student_id`, `roll`, `image`, `stu_name`, `class`, `section`) VALUES
+(1, '290000', '194', 'assets/backend/img/student/64144d64b081bWhatsApp Image 2023-03-13 at 1.09.38 PM.jpeg', 'Kelly Bryan', '4', '5');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `2021-2022_6_students`
+--
+
+CREATE TABLE `2021-2022_6_students` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `student_id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `roll` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `stu_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `class` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `section` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `2021-2022_6_students`
+--
+
+INSERT INTO `2021-2022_6_students` (`id`, `student_id`, `roll`, `image`, `stu_name`, `class`, `section`) VALUES
+(1, '600000', '888', 'assets/backend/img/student/64144a90bebc5WhatsApp Image 2023-03-13 at 1.09.38 PM.jpeg', 'Freya Henry', '6', '7'),
+(2, '300000', '654', 'assets/backend/img/student/6415e4dea7d24WhatsApp Image 2023-03-13 at 1.09.38 PM.jpeg', 'Derek Mcgowan', '6', '7');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `2021-2022_7_students`
+--
+
+CREATE TABLE `2021-2022_7_students` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `student_id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `roll` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `stu_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `class` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `section` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `2021-2022_7_students`
+--
+
+INSERT INTO `2021-2022_7_students` (`id`, `student_id`, `roll`, `image`, `stu_name`, `class`, `section`) VALUES
+(1, '400000', '760', 'assets/backend/img/student/64144a718b93aWhatsApp Image 2023-03-13 at 1.09.38 PM.jpeg', 'Merrill Wilder', '7', '10');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `2021-2022_8_students`
+--
+
+CREATE TABLE `2021-2022_8_students` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `student_id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `roll` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `stu_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `class` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `section` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `2021-2022_8_students`
+--
+
+INSERT INTO `2021-2022_8_students` (`id`, `student_id`, `roll`, `image`, `stu_name`, `class`, `section`) VALUES
+(1, '100000', '365', 'assets/backend/img/student/64144aca77890WhatsApp Image 2023-03-13 at 1.09.38 PM.jpeg', 'Kylee Pace', '8', '11'),
+(2, '140000', '142', 'assets/backend/img/student/64144b0383a56WhatsApp Image 2023-03-13 at 1.09.38 PM.jpeg', 'Xantha Ferguson', '8', '11');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `2021-2022_9_students`
+--
+
+CREATE TABLE `2021-2022_9_students` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `student_id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `roll` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `stu_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `class` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `section` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `2021-2022_9_students`
+--
+
+INSERT INTO `2021-2022_9_students` (`id`, `student_id`, `roll`, `image`, `stu_name`, `class`, `section`) VALUES
+(1, '200000', '49', 'assets/backend/img/student/641449604a351WhatsApp Image 2023-03-13 at 1.09.38 PM.jpeg', 'Urielle Berger', '9', '13');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `2021-2022_10_students`
+--
+
+CREATE TABLE `2021-2022_10_students` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `student_id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `roll` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `stu_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `class` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `section` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `2021-2022_10_students`
+--
+
+INSERT INTO `2021-2022_10_students` (`id`, `student_id`, `roll`, `image`, `stu_name`, `class`, `section`) VALUES
+(1, '500000', '295', 'assets/backend/img/student/64144a82c32e1WhatsApp Image 2023-03-13 at 1.09.38 PM.jpeg', 'Fritz Garcia', '10', '16');
 
 -- --------------------------------------------------------
 
@@ -88,6 +535,7 @@ CREATE TABLE `accountants` (
   `email` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `department` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `salary` double(10,2) DEFAULT NULL,
   `fb` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `twitter` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `linkden` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -97,6 +545,14 @@ CREATE TABLE `accountants` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `accountants`
+--
+
+INSERT INTO `accountants` (`id`, `role_id`, `name`, `school_id`, `designation`, `dob`, `gender`, `address`, `qualification`, `phone`, `email`, `password`, `department`, `salary`, `fb`, `twitter`, `linkden`, `subject`, `image`, `status`, `created_at`, `updated_at`) VALUES
+(1, 6, 'Kaseem Lamb', NULL, 'Ut quaerat reprehend', '1977-07-09', 'male', 'Voluptate et nisi fu', 'butix@mailinator.com', '+1 (598) 514-2065', 'morymysun@mailinator.com', '$2y$10$5rlRFiv9r010K/ZKDxgl/.FxZUounX4wIWycl.Uvyrx162BhSoAPK', 'Hic officia est inc', 20000.00, 'Est neque commodi d', 'Ut do elit nisi lab', 'Quia molestiae culpa', NULL, 'assets/backend/teacher/63974610503ccdownload (2).jpg', '1', '2022-12-12 09:17:36', '2022-12-12 09:17:36'),
+(2, 6, 'Idona Ramirez', NULL, 'Rerum in dolore quas', '1987-11-11', 'male', 'Quia ab nemo volupta', 'dywam@mailinator.com', '+1 (534) 663-3132', 'lezawu@mailinator.com', '$2y$10$Cu7PISEqrog1XeY4wGOtme/igkEmMs7d1IW21mkYjScNZQO447oRW', 'Exercitationem accus', 22500.00, 'Vero corporis velit', 'Beatae voluptas iust', 'Et unde dolor id bea', NULL, 'assets/backend/teacher/6397463602d41download (1).jpg', '1', '2022-12-12 09:18:14', '2022-12-12 09:18:14');
 
 -- --------------------------------------------------------
 
@@ -109,6 +565,18 @@ CREATE TABLE `admin_resets` (
   `school_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `user_id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `token` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `assignments`
+--
+
+CREATE TABLE `assignments` (
+  `id` bigint(20) UNSIGNED NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -207,7 +675,7 @@ CREATE TABLE `class_routines` (
   `class_name` bigint(20) UNSIGNED NOT NULL,
   `section` bigint(20) UNSIGNED NOT NULL,
   `subject` bigint(20) UNSIGNED NOT NULL,
-  `teacher` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `teacher` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `day` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `starting_hour` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `starting_minute` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -225,7 +693,79 @@ CREATE TABLE `class_routines` (
 --
 
 INSERT INTO `class_routines` (`id`, `school_id`, `class_name`, `section`, `subject`, `teacher`, `day`, `starting_hour`, `starting_minute`, `starting`, `ending_hour`, `ending_minute`, `ending`, `status`, `created_at`, `updated_at`) VALUES
-(1, NULL, 2, 3, 4, 'Maggie Vargas', 'Saturday', '10', '0', 'AM', '11', '0', 'AM', 1, '2022-11-12 10:40:31', '2022-11-12 10:40:31');
+(1, NULL, 2, 3, 3, 'Maggie Vargas', 'Saturday', '10', '0', 'AM', '11', '0', 'AM', 1, '2022-11-12 10:40:31', '2022-12-10 00:21:54'),
+(2, NULL, 4, 6, 16, 'Josiah Oneill', 'Saturday', '9', '0', 'AM', '10', '0', 'AM', 1, '2022-12-03 12:27:52', '2022-12-13 08:18:50'),
+(3, NULL, 2, 3, 4, 'Maggie Vargas', 'Saturday', '11', '0', 'AM', '12', '0', 'PM', 1, '2022-12-10 00:11:09', '2022-12-10 00:11:09'),
+(4, NULL, 2, 3, 6, 'Roth Moody', 'Saturday', '12', '0', 'PM', '1', '0', 'PM', 1, '2022-12-10 00:11:49', '2022-12-10 00:11:49'),
+(5, NULL, 2, 3, 7, 'Cole Holcomb', 'Saturday', '1', '0', 'PM', '2', '0', 'PM', 1, '2022-12-10 00:12:50', '2022-12-10 00:12:50'),
+(6, NULL, 2, 3, 8, 'Beatrice Burks', 'Saturday', '2', '0', 'PM', '3', '0', 'PM', 1, '2022-12-10 00:13:57', '2022-12-10 00:13:57'),
+(7, NULL, 2, 3, 11, 'Jessamine Rivers', 'Saturday', '3', '0', 'PM', '4', '0', 'PM', 1, '2022-12-10 00:14:41', '2022-12-10 00:14:41'),
+(8, NULL, 2, 3, 3, '8', 'Sunday', '2', '0', 'AM', '0', '0', 'PM', 1, '2022-12-10 04:44:51', '2022-12-10 04:44:51'),
+(9, NULL, 2, 3, 3, '3', 'Sunday', '6', '0', 'AM', '2', '0', 'PM', 1, '2022-12-10 04:44:51', '2022-12-10 04:44:51'),
+(10, NULL, 2, 3, 3, '6', 'Sunday', '1', '0', 'AM', '3', '0', 'PM', 1, '2022-12-10 04:44:51', '2022-12-10 04:44:51'),
+(11, NULL, 2, 3, 7, '8', 'Sunday', '8', '0', 'AM', '9', '0', 'PM', 1, '2022-12-10 04:44:52', '2022-12-10 04:44:52'),
+(12, NULL, 2, 3, 6, '8', 'Sunday', '9', '0', 'AM', '4', '0', 'PM', 1, '2022-12-10 04:44:52', '2022-12-10 04:44:52'),
+(13, NULL, 2, 3, 8, '11', 'Sunday', '3', '0', 'AM', '0', '0', 'PM', 1, '2022-12-10 04:44:52', '2022-12-10 04:44:52'),
+(14, NULL, 2, 3, 8, 'Kay Strong', 'Monday', '7', '0', 'AM', '3', '0', 'PM', 1, '2022-12-10 04:51:03', '2022-12-10 04:51:03'),
+(15, NULL, 2, 3, 7, 'Shana Buchanan', 'Monday', '6', '0', 'AM', '3', '0', 'PM', 1, '2022-12-10 04:51:03', '2022-12-10 04:51:03'),
+(16, NULL, 2, 3, 7, 'Halla Owens', 'Monday', '3', '0', 'AM', '7', '0', 'PM', 1, '2022-12-10 04:51:04', '2022-12-10 04:51:04'),
+(17, NULL, 2, 3, 11, 'Kay Strong', 'Monday', '6', '0', 'AM', '0', '0', 'PM', 1, '2022-12-10 04:51:04', '2022-12-10 04:51:04'),
+(18, NULL, 2, 3, 11, 'Halla Owens', 'Monday', '7', '0', 'AM', '0', '0', 'PM', 1, '2022-12-10 04:51:04', '2022-12-10 04:51:04'),
+(19, NULL, 2, 3, 11, 'Halla Owens', 'Monday', '2', '0', 'AM', '4', '0', 'PM', 1, '2022-12-10 04:51:04', '2022-12-10 04:51:04'),
+(20, NULL, 2, 3, 4, 'Jayme Morris', 'Tuesday', '6', '0', 'AM', '1', '0', 'PM', 1, '2022-12-10 04:52:14', '2022-12-10 04:52:14'),
+(21, NULL, 2, 3, 4, 'Jayme Morris', 'Tuesday', '6', '0', 'AM', '0', '0', 'PM', 1, '2022-12-10 04:52:14', '2022-12-10 04:52:14'),
+(22, NULL, 2, 3, 8, 'Shana Buchanan', 'Tuesday', '6', '0', 'AM', '9', '0', 'PM', 1, '2022-12-10 04:52:14', '2022-12-10 04:52:14'),
+(23, NULL, 2, 3, 8, 'Jayme Morris', 'Tuesday', '8', '0', 'AM', '0', '0', 'PM', 1, '2022-12-10 04:52:14', '2022-12-10 04:52:14'),
+(24, NULL, 2, 3, 7, 'Cole Holcomb', 'Tuesday', '8', '0', 'AM', '9', '0', 'PM', 1, '2022-12-10 04:52:14', '2022-12-10 04:52:14'),
+(25, NULL, 2, 3, 8, 'Kay Strong', 'Tuesday', '9', '0', 'AM', '7', '0', 'PM', 1, '2022-12-10 04:52:15', '2022-12-10 04:52:15'),
+(26, NULL, 2, 3, 6, 'Halla Owens', 'Wednesday', '5', '0', 'AM', '0', '0', 'PM', 1, '2022-12-10 04:52:34', '2022-12-10 04:52:34'),
+(27, NULL, 2, 3, 4, 'Kay Strong', 'Wednesday', '7', '0', 'AM', '0', '0', 'PM', 1, '2022-12-10 04:52:34', '2022-12-10 04:52:34'),
+(28, NULL, 2, 3, 6, 'Kay Strong', 'Wednesday', '1', '0', 'AM', '7', '0', 'PM', 1, '2022-12-10 04:52:34', '2022-12-10 04:52:34'),
+(29, NULL, 2, 3, 11, 'Shana Buchanan', 'Wednesday', '1', '0', 'AM', '1', '0', 'PM', 1, '2022-12-10 04:52:34', '2022-12-10 04:52:34'),
+(30, NULL, 2, 3, 4, 'Cole Holcomb', 'Wednesday', '0', '0', 'AM', '4', '0', 'PM', 1, '2022-12-10 04:52:34', '2022-12-10 04:52:34'),
+(31, NULL, 2, 3, 8, 'Halla Owens', 'Wednesday', '9', '0', 'AM', '2', '0', 'PM', 1, '2022-12-10 04:52:34', '2022-12-10 04:52:34'),
+(32, NULL, 2, 3, 4, 'Jayme Morris', 'Thursday', '4', '0', 'AM', '9', '0', 'PM', 1, '2022-12-10 04:52:56', '2022-12-10 04:52:56'),
+(33, NULL, 2, 3, 8, 'Cole Holcomb', 'Thursday', '0', '0', 'AM', '9', '0', 'PM', 1, '2022-12-10 04:52:56', '2022-12-10 04:52:56'),
+(34, NULL, 2, 3, 4, 'Jayme Morris', 'Thursday', '5', '0', 'AM', '9', '0', 'PM', 1, '2022-12-10 04:52:56', '2022-12-10 04:52:56'),
+(35, NULL, 2, 3, 3, 'Cole Holcomb', 'Thursday', '9', '0', 'AM', '2', '0', 'PM', 1, '2022-12-10 04:52:56', '2022-12-10 04:52:56'),
+(36, NULL, 2, 3, 3, 'Kay Strong', 'Thursday', '8', '0', 'AM', '2', '0', 'PM', 1, '2022-12-10 04:52:56', '2022-12-10 04:52:56'),
+(37, NULL, 2, 3, 11, 'Halla Owens', 'Thursday', '3', '0', 'AM', '1', '0', 'PM', 1, '2022-12-10 04:52:56', '2022-12-10 04:52:56'),
+(38, NULL, 3, 5, 10, 'Maggie Vargas', 'Thursday', '3', '0', 'AM', '0', '0', 'PM', 1, '2022-12-10 04:58:04', '2022-12-10 04:58:04'),
+(39, NULL, 3, 5, 15, 'Alisa Lara', 'Thursday', '2', '0', 'AM', '5', '0', 'PM', 1, '2022-12-10 04:58:04', '2022-12-10 04:58:04'),
+(40, NULL, 3, 5, 9, 'Maggie Vargas', 'Thursday', '9', '0', 'AM', '6', '0', 'PM', 1, '2022-12-10 04:58:04', '2022-12-10 04:58:04'),
+(41, NULL, 3, 5, 13, 'Josiah Oneill', 'Thursday', '5', '0', 'AM', '2', '0', 'PM', 1, '2022-12-10 04:58:04', '2022-12-10 04:58:04'),
+(42, NULL, 3, 5, 13, 'Hermione Pope', 'Thursday', '6', '0', 'AM', '3', '0', 'PM', 1, '2022-12-10 04:58:04', '2022-12-10 04:58:04'),
+(43, NULL, 3, 5, 10, 'Hermione Pope', 'Thursday', '9', '0', 'AM', '2', '0', 'PM', 1, '2022-12-10 04:58:04', '2022-12-10 04:58:04'),
+(44, NULL, 3, 5, 13, 'Maggie Vargas', 'Wednesday', '6', '0', 'AM', '4', '0', 'PM', 1, '2022-12-10 04:58:23', '2022-12-10 04:58:23'),
+(45, NULL, 3, 5, 13, 'Maggie Vargas', 'Wednesday', '9', '0', 'AM', '8', '0', 'PM', 1, '2022-12-10 04:58:24', '2022-12-10 04:58:24'),
+(46, NULL, 3, 5, 13, 'Beatrice Burks', 'Wednesday', '4', '0', 'AM', '2', '0', 'PM', 1, '2022-12-10 04:58:24', '2022-12-10 04:58:24'),
+(47, NULL, 3, 5, 13, 'Alisa Lara', 'Wednesday', '8', '0', 'AM', '7', '0', 'PM', 1, '2022-12-10 04:58:24', '2022-12-10 04:58:24'),
+(48, NULL, 3, 5, 12, 'Beatrice Burks', 'Wednesday', '1', '0', 'AM', '8', '0', 'PM', 1, '2022-12-10 04:58:24', '2022-12-10 04:58:24'),
+(49, NULL, 3, 5, 9, 'Alisa Lara', 'Wednesday', '3', '0', 'AM', '3', '0', 'PM', 1, '2022-12-10 04:58:24', '2022-12-10 04:58:24'),
+(50, NULL, 3, 5, 14, 'Hermione Pope', 'Tuesday', '0', '0', 'AM', '0', '0', 'PM', 1, '2022-12-10 04:58:40', '2022-12-10 04:58:40'),
+(51, NULL, 3, 5, 13, 'Maggie Vargas', 'Tuesday', '1', '0', 'AM', '0', '0', 'PM', 1, '2022-12-10 04:58:41', '2022-12-10 04:58:41'),
+(52, NULL, 3, 5, 10, 'Clementine Pugh', 'Tuesday', '2', '0', 'AM', '0', '0', 'PM', 1, '2022-12-10 04:58:41', '2022-12-10 04:58:41'),
+(53, NULL, 3, 5, 14, 'Josiah Oneill', 'Tuesday', '8', '0', 'AM', '6', '0', 'PM', 1, '2022-12-10 04:58:41', '2022-12-10 04:58:41'),
+(54, NULL, 3, 5, 9, 'Beatrice Burks', 'Tuesday', '0', '0', 'AM', '9', '0', 'PM', 1, '2022-12-10 04:58:41', '2022-12-10 04:58:41'),
+(55, NULL, 3, 5, 15, 'Clementine Pugh', 'Tuesday', '7', '0', 'AM', '7', '0', 'PM', 1, '2022-12-10 04:58:41', '2022-12-10 04:58:41'),
+(56, NULL, 3, 5, 12, 'Beatrice Burks', 'Monday', '3', '0', 'AM', '8', '0', 'PM', 1, '2022-12-10 04:59:01', '2022-12-10 04:59:01'),
+(57, NULL, 3, 5, 14, 'Clementine Pugh', 'Monday', '2', '0', 'AM', '1', '0', 'PM', 1, '2022-12-10 04:59:01', '2022-12-10 04:59:01'),
+(58, NULL, 3, 5, 13, 'Maggie Vargas', 'Monday', '1', '0', 'AM', '5', '0', 'PM', 1, '2022-12-10 04:59:01', '2022-12-10 04:59:01'),
+(59, NULL, 3, 5, 12, 'Hermione Pope', 'Monday', '2', '0', 'AM', '2', '0', 'PM', 1, '2022-12-10 04:59:01', '2022-12-10 04:59:01'),
+(60, NULL, 3, 5, 14, 'Clementine Pugh', 'Monday', '0', '0', 'AM', '9', '0', 'PM', 1, '2022-12-10 04:59:01', '2022-12-10 04:59:01'),
+(61, NULL, 3, 5, 15, 'Alisa Lara', 'Monday', '2', '0', 'AM', '9', '0', 'PM', 1, '2022-12-10 04:59:02', '2022-12-10 04:59:02'),
+(62, NULL, 3, 5, 14, 'Alisa Lara', 'Sunday', '2', '0', 'AM', '8', '0', 'PM', 1, '2022-12-10 04:59:21', '2022-12-10 04:59:21'),
+(63, NULL, 3, 5, 14, 'Clementine Pugh', 'Sunday', '8', '0', 'AM', '7', '0', 'PM', 1, '2022-12-10 04:59:21', '2022-12-10 04:59:21'),
+(64, NULL, 3, 5, 12, 'Josiah Oneill', 'Sunday', '9', '0', 'AM', '8', '0', 'PM', 1, '2022-12-10 04:59:21', '2022-12-10 04:59:21'),
+(65, NULL, 3, 5, 15, 'Clementine Pugh', 'Sunday', '8', '0', 'AM', '5', '0', 'PM', 1, '2022-12-10 04:59:21', '2022-12-10 04:59:21'),
+(66, NULL, 3, 5, 12, 'Maggie Vargas', 'Sunday', '9', '0', 'AM', '3', '0', 'PM', 1, '2022-12-10 04:59:22', '2022-12-10 04:59:22'),
+(67, NULL, 3, 5, 9, 'Beatrice Burks', 'Sunday', '2', '0', 'AM', '0', '0', 'PM', 1, '2022-12-10 04:59:22', '2022-12-10 04:59:22'),
+(68, NULL, 3, 5, 12, 'Beatrice Burks', 'Saturday', '3', '0', 'AM', '1', '0', 'PM', 1, '2022-12-10 04:59:47', '2022-12-10 04:59:47'),
+(69, NULL, 3, 5, 13, 'Hermione Pope', 'Saturday', '5', '0', 'AM', '9', '0', 'PM', 1, '2022-12-10 04:59:47', '2022-12-10 04:59:47'),
+(70, NULL, 3, 5, 14, 'Hermione Pope', 'Saturday', '1', '0', 'AM', '0', '0', 'PM', 1, '2022-12-10 04:59:47', '2022-12-10 04:59:47'),
+(71, NULL, 3, 5, 13, 'Maggie Vargas', 'Saturday', '8', '0', 'AM', '2', '0', 'PM', 1, '2022-12-10 04:59:47', '2022-12-10 04:59:47'),
+(72, NULL, 3, 5, 10, 'Maggie Vargas', 'Saturday', '8', '0', 'AM', '0', '0', 'PM', 1, '2022-12-10 04:59:47', '2022-12-10 04:59:47'),
+(73, NULL, 3, 5, 12, 'Alisa Lara', 'Saturday', '0', '0', 'AM', '9', '0', 'PM', 1, '2022-12-10 04:59:47', '2022-12-10 04:59:47');
 
 -- --------------------------------------------------------
 
@@ -289,64 +829,44 @@ INSERT INTO `courses` (`id`, `school_id`, `course_name`, `course_code`, `status`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `create_marks_1_students`
+-- Table structure for table `credit_funds`
 --
 
-CREATE TABLE `create_marks_1_students` (
-  `id` int(10) UNSIGNED NOT NULL,
-  `student_id` bigint(20) UNSIGNED DEFAULT NULL,
-  `roll` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `stu_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `session` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `class_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `section` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `subject_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `theory` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `mcq` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `practical` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `total` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `assignment` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `remarks` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+CREATE TABLE `credit_funds` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `trx_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `from_id` int(11) DEFAULT NULL,
+  `to_id` int(11) DEFAULT NULL,
+  `dr` double(10,2) NOT NULL DEFAULT 0.00,
+  `cr` double(10,2) NOT NULL,
+  `balance` double(10,2) NOT NULL DEFAULT 0.00,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `create_marks_1_students`
---
-
-INSERT INTO `create_marks_1_students` (`id`, `student_id`, `roll`, `stu_name`, `session`, `class_name`, `section`, `subject_name`, `theory`, `mcq`, `practical`, `total`, `assignment`, `remarks`) VALUES
-(1, 1, '1', 'vufovolifa@mailinator.com', '2021-2022', '2', '3', '3', '45', '45', '45', '100', NULL, NULL),
-(2, 3, '3', 'Surjo', '2021-2022', '2', '3', '3', '50', '45', '45', '200', NULL, NULL),
-(11, 2, '2', 'jodigutira@mailinator.com', '2020-2021', '4', '6', '16', '200', '100', '100', '300', NULL, NULL);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `create_marks_2_students`
+-- Table structure for table `deposits`
 --
 
-CREATE TABLE `create_marks_2_students` (
-  `id` int(10) UNSIGNED NOT NULL,
-  `student_id` bigint(20) UNSIGNED DEFAULT NULL,
-  `roll` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `stu_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `session` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `class_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `section` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `subject_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `theory` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `mcq` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `practical` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `total` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `assignment` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `remarks` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+CREATE TABLE `deposits` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `date_of_deposit` date NOT NULL,
+  `main_id` bigint(20) UNSIGNED DEFAULT NULL,
+  `sub_head_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `giver_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `voucher_no` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `trx_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `particular` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `amount` double(10,2) NOT NULL,
+  `fund_id` bigint(20) UNSIGNED NOT NULL,
+  `payment_note` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `attach` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `status` tinyint(4) NOT NULL DEFAULT 1,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `create_marks_2_students`
---
-
-INSERT INTO `create_marks_2_students` (`id`, `student_id`, `roll`, `stu_name`, `session`, `class_name`, `section`, `subject_name`, `theory`, `mcq`, `practical`, `total`, `assignment`, `remarks`) VALUES
-(1, 2, '2', 'jodigutira@mailinator.com', '2020-2021', '4', '6', '16', '500', '500', '500', '1500', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -490,39 +1010,39 @@ CREATE TABLE `education_qualifications` (
 --
 
 INSERT INTO `education_qualifications` (`id`, `student_id`, `exam_name`, `department`, `board`, `passing_year`, `exam_roll`, `reg`, `gpa`, `created_at`, `updated_at`) VALUES
-(15, 17, 'JSC', 'Arts', 'Comilla', '2015', '12345', '12345', '4', '2022-11-08 22:13:19', '2022-11-08 22:13:19'),
-(16, 17, 'SSC', 'Science', 'Chittagong', '2016', '12345', '12345', '5', '2022-11-08 22:13:19', '2022-11-08 22:13:19'),
-(17, 18, 'SSC', 'Science', 'Technical', '2046', '4555', '5555', '4', '2022-11-08 22:17:57', '2022-11-08 22:17:57'),
-(18, 19, 'PSC', 'Science', 'Barisal', '2021', '1213456', '45621', '5', '2022-11-08 22:19:25', '2022-11-08 22:19:25'),
-(19, 19, 'JSC', 'Arts', 'Madrasah', '2016', '1213', '1212', '5', '2022-11-08 22:19:25', '2022-11-08 22:19:25'),
-(20, 20, 'SSC', 'select', 'Mymensingh', '2023', '21212', '12121', '5', '2022-11-08 22:20:53', '2022-11-08 22:20:53'),
-(21, 21, 'select exam name', 'Commerce', 'Barisal', '2025', '121', '1212', '5', '2022-11-08 22:22:02', '2022-11-08 22:22:02'),
-(22, 22, 'PSC', 'select', 'Dhaka', '2005', '123312', '12312313', '5', '2022-11-08 22:25:22', '2022-11-08 22:25:22'),
-(23, 22, 'SSC', 'Arts', 'Comilla', '2014', '45566', '45645', '4', '2022-11-08 22:25:22', '2022-11-08 22:25:22'),
-(24, 23, 'HSC', 'select', 'Mymensingh', '2027', '1212', '1212', '4', '2022-11-08 22:26:49', '2022-11-08 22:26:49'),
-(25, 24, 'HSC', 'Arts', 'Comilla', '2005', '1212', '1212', '4', '2022-11-08 22:27:37', '2022-11-08 22:27:37'),
-(26, 25, 'SSC', 'Arts', 'Technical', '2024', '11212', '121212', '3', '2022-11-08 22:28:46', '2022-11-08 22:28:46'),
-(27, 26, 'select exam name', 'Commerce', 'Jessore', '2044', '212121', '2211', '2', '2022-11-08 22:29:52', '2022-11-08 22:29:52'),
-(28, 27, 'select exam name', 'Arts', 'Rajshahi', '2001', '456456', '645654', '4', '2022-11-08 22:30:47', '2022-11-08 22:30:47'),
-(29, 28, 'PSC', 'Arts', 'Technical', '2046', '1222', '1231', '3', '2022-11-08 22:31:46', '2022-11-08 22:31:46'),
-(30, 29, 'SSC', 'select', 'Chittagong', '2023', '213', '213213', '1', '2022-11-08 22:32:51', '2022-11-08 22:32:51'),
-(31, 30, 'PSC', 'Science', 'Jessore', '2017', '1221', '321321', '2', '2022-11-08 22:33:35', '2022-11-08 22:33:35'),
-(32, 31, 'SSC', 'select', 'Dhaka', '2048', '122121', '5456454', '5', '2022-11-08 22:34:34', '2022-11-08 22:34:34'),
-(33, 32, 'PSC', 'Arts', 'Dhaka', '2001', '123123', '12312', '2', '2022-11-08 22:35:17', '2022-11-08 22:35:17'),
-(34, 33, 'SSC', 'Arts', 'Madrasah', '2049', '12313', '123123', 'Kellie Mcclain', '2022-11-08 22:37:19', '2022-11-08 22:37:19'),
-(35, 34, 'PSC', 'Commerce', 'Comilla', '2033', '554646', '456546', '5', '2022-11-08 22:39:28', '2022-11-08 22:39:28'),
-(36, 35, 'select exam name', 'Science', 'Sylhet', '2030', '2132', '31212', '2', '2022-11-08 22:40:19', '2022-11-08 22:40:19'),
-(37, 36, 'HSC', 'Arts', 'Comilla', '2022', '121212', '231231', '4', '2022-11-08 22:42:49', '2022-11-08 22:42:49'),
-(38, 37, 'JSC', 'Commerce', 'Madrasah', '2021', '1123213', '23121', '4', '2022-11-08 22:43:41', '2022-11-08 22:43:41'),
-(39, 38, 'SSC', 'Arts', 'select', '2020', '1231321', '31231', '3', '2022-11-08 22:44:37', '2022-11-08 22:44:37'),
-(40, 39, 'select exam name', 'Science', 'Dhaka', '2032', '212321', '321312', '4', '2022-11-08 22:45:23', '2022-11-08 22:45:23'),
-(41, 40, 'SSC', 'select', 'Jessore', '2041', '213213', '232131', '4', '2022-11-08 22:46:30', '2022-11-08 22:46:30'),
-(42, 41, 'PSC', 'Science', 'Chittagong', '2008', '123', '12312', '3', '2022-11-08 22:47:55', '2022-11-08 22:47:55'),
-(43, 42, 'SSC', 'Commerce', 'select', '2004', '12313', '12321', '3', '2022-11-08 22:48:40', '2022-11-08 22:48:40'),
-(44, 43, 'HSC', 'select', 'Dinajpur', '2036', '12321', '122132', '5', '2022-11-08 22:49:35', '2022-11-08 22:49:35'),
-(45, 1, 'select exam name', 'Science', 'Comilla', '2033', 'wykoc@mailinator.com', 'cojemozoq@mailinator.com', 'qixenamo@mailinator.com', '2022-11-26 02:28:52', '2022-11-26 02:28:52'),
-(46, 2, 'JSC', 'Commerce', 'Comilla', '2030', '1000', '100', '5', '2022-11-27 04:13:06', '2022-11-27 04:13:06'),
-(47, 3, 'PSC', 'Arts', 'Madrasah', '2012', '123456', '1234567898', '5', '2022-12-02 23:23:03', '2022-12-02 23:23:03');
+(1, 1, 'HSC', 'Science', 'Barisal', '2026', '1245789', '4567892', '4', '2022-12-19 23:20:32', '2022-12-19 23:27:27'),
+(2, 5, 'PSC', 'Commerce', 'DIBS(Dhaka)', '2035', 'sevym@mailinator.com', 'wavyzuve@mailinator.com', 'jofoxezyde@mailinator.com', '2022-12-21 08:44:40', '2022-12-21 08:44:40'),
+(3, 6, 'JSC', 'Science', 'Barisal', '2033', 'fyrekit@mailinator.com', 'sahuzy@mailinator.com', 'piwykom@mailinator.com', '2022-12-21 08:46:46', '2022-12-21 08:46:46');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `employee_salaries`
+--
+
+CREATE TABLE `employee_salaries` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `user_id` bigint(20) UNSIGNED DEFAULT NULL,
+  `user_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `salary` double(10,2) DEFAULT NULL,
+  `adv_salary` double(10,2) DEFAULT NULL,
+  `due_salary` double(10,2) DEFAULT NULL,
+  `session_year` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `month` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `date` date DEFAULT NULL,
+  `discription` mediumtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `pay_status` enum('paid','unpaid') COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'unpaid',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `employee_salaries`
+--
+
+INSERT INTO `employee_salaries` (`id`, `user_id`, `user_name`, `salary`, `adv_salary`, `due_salary`, `session_year`, `month`, `date`, `discription`, `pay_status`, `created_at`, `updated_at`) VALUES
+(1, NULL, '1-t', 12000.00, NULL, NULL, '2021-2022', 'Decembar-2022', '2022-12-22', 'Paid', 'paid', '2022-12-22 03:31:41', '2022-12-22 03:31:41'),
+(2, NULL, '4-t', 10000.00, NULL, NULL, '2021-2022', 'Decembar-2022', '2022-12-22', 'paid', 'paid', '2022-12-22 03:32:26', '2022-12-22 03:32:26');
 
 -- --------------------------------------------------------
 
@@ -570,6 +1090,14 @@ CREATE TABLE `exam_grades` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `exam_grades`
+--
+
+INSERT INTO `exam_grades` (`id`, `grade_name`, `grade_point`, `mark_from`, `mark_upto`, `grade_point_from`, `grade_point_upto`, `description`, `status`, `created_at`, `updated_at`) VALUES
+(1, '2', '2', '40', '49', '2', '3', 'dfgfgfgdfg', 1, '2022-12-07 23:46:49', '2022-12-07 23:46:50'),
+(2, 'A', '4', '70', '79', '4', '5', 'fdgdfg', 1, '2022-12-07 23:53:52', '2022-12-07 23:53:52');
+
 -- --------------------------------------------------------
 
 --
@@ -599,6 +1127,97 @@ INSERT INTO `exam_lists` (`id`, `school_id`, `exam_name`, `date`, `description`,
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `expances`
+--
+
+CREATE TABLE `expances` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `expance_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `description` mediumtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `status` enum('1','0') COLLATE utf8mb4_unicode_ci DEFAULT '1',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `expances`
+--
+
+INSERT INTO `expances` (`id`, `expance_name`, `description`, `status`, `created_at`, `updated_at`) VALUES
+(2, 'Timothy Fisher', 'Porro ut corporis ad', '1', '2022-12-11 05:36:09', '2022-12-11 05:36:09'),
+(3, 'Kyra Rowland', 'Magnam blanditiis es', '1', '2022-12-11 05:36:19', '2022-12-11 05:36:19'),
+(4, 'Eletric bill', 'Eletric bill  Eletric bill', '1', '2022-12-11 10:15:40', '2022-12-11 10:15:40');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `expancesive_lists`
+--
+
+CREATE TABLE `expancesive_lists` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `user_id` bigint(20) UNSIGNED DEFAULT NULL,
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `phone` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `user_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `expance_type` bigint(20) UNSIGNED DEFAULT NULL,
+  `salary` double(10,2) DEFAULT NULL,
+  `adv_salary` double(10,2) DEFAULT NULL,
+  `due_salary` double(10,2) DEFAULT NULL,
+  `pay` double(10,2) DEFAULT NULL,
+  `adv_pay` double(10,2) DEFAULT NULL,
+  `due_pay` double(10,2) DEFAULT NULL,
+  `session_year` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `month` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `date` date DEFAULT NULL,
+  `discription` mediumtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `pay_status` enum('paid','unpaid') COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'unpaid',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `expenses`
+--
+
+CREATE TABLE `expenses` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `date_of_expense` date NOT NULL,
+  `main_head_id` bigint(20) UNSIGNED DEFAULT NULL,
+  `sub_head_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `receiver` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `voucher_no` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `trx_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `total_amount` double(10,2) NOT NULL,
+  `fund_id` bigint(20) UNSIGNED NOT NULL,
+  `payment_note` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `attach` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `status` tinyint(4) NOT NULL DEFAULT 1,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `expense_partculers`
+--
+
+CREATE TABLE `expense_partculers` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `expense_id` bigint(20) UNSIGNED NOT NULL,
+  `particuler_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `ammout` double(10,2) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `failed_jobs`
 --
 
@@ -611,6 +1230,30 @@ CREATE TABLE `failed_jobs` (
   `exception` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
   `failed_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `funds`
+--
+
+CREATE TABLE `funds` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `fund_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `account_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `account_balance` double(10,2) DEFAULT NULL,
+  `isDefault` tinyint(4) NOT NULL DEFAULT 0,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `funds`
+--
+
+INSERT INTO `funds` (`id`, `fund_id`, `account_name`, `description`, `account_balance`, `isDefault`, `created_at`, `updated_at`) VALUES
+(1, 'fnd-1', 'Cash', 'Cash fund.', 0.00, 1, '2023-01-27 08:23:41', '2023-01-27 08:23:41');
 
 -- --------------------------------------------------------
 
@@ -859,7 +1502,6 @@ INSERT INTO `issu_books` (`id`, `school_id`, `book_name`, `name`, `phone`, `addr
 
 CREATE TABLE `librarians` (
   `id` bigint(20) UNSIGNED NOT NULL,
-  `school_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `role_id` bigint(20) UNSIGNED NOT NULL,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -867,6 +1509,7 @@ CREATE TABLE `librarians` (
   `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `gender` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `dob` date DEFAULT NULL,
+  `salary` double(10,2) DEFAULT NULL,
   `status` tinyint(4) NOT NULL DEFAULT 1,
   `email_verified_at` timestamp NULL DEFAULT NULL,
   `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -880,8 +1523,9 @@ CREATE TABLE `librarians` (
 -- Dumping data for table `librarians`
 --
 
-INSERT INTO `librarians` (`id`, `school_id`, `role_id`, `name`, `email`, `phone`, `image`, `gender`, `dob`, `status`, `email_verified_at`, `password`, `deleted_at`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, NULL, 3, 'Librarian', 'librarian@example.com', NULL, NULL, NULL, NULL, 0, NULL, '$2y$10$r0bM7hsEf7Mg0uM8FIiiU.VvqEa09rYa6xJKt0MNlysDBOi0L17hu', NULL, NULL, '2022-11-17 21:59:25', '2022-11-26 23:52:54');
+INSERT INTO `librarians` (`id`, `role_id`, `name`, `email`, `phone`, `image`, `gender`, `dob`, `salary`, `status`, `email_verified_at`, `password`, `deleted_at`, `remember_token`, `created_at`, `updated_at`) VALUES
+(1, 4, 'Joan Wiley', 'pyvanysupy@mailinator.com', NULL, NULL, NULL, NULL, NULL, 1, NULL, '$2y$10$XEKXzEHYhe.7Aliu6nNeL.Jq9A6tFI5SIVyW9wx3cJ4YlNUAOS3jq', NULL, NULL, '2022-12-12 09:14:20', '2022-12-12 09:14:20'),
+(2, 4, 'Linus Buckley', 'fejacen@mailinator.com', NULL, NULL, NULL, NULL, NULL, 1, NULL, '$2y$10$8Yoyderle0Oq4CxMk2SJS.B1bTSjmuq0eKuw7vjK4PhunqoRgtgoS', NULL, NULL, '2022-12-12 09:14:44', '2022-12-12 09:14:44');
 
 -- --------------------------------------------------------
 
@@ -945,6 +1589,23 @@ INSERT INTO `lost_inventories` (`id`, `school_id`, `product_id`, `product_name`,
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `main_heads`
+--
+
+CREATE TABLE `main_heads` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `main_head` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `code` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `type` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `status` tinyint(1) NOT NULL DEFAULT 1,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `migrations`
 --
 
@@ -982,9 +1643,6 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (50, '2022_10_29_184239_create_classes_table', 14),
 (51, '2022_10_29_211030_create_sections_table', 14),
 (52, '2022_10_30_202233_create_session_years_table', 15),
-(53, '2022_11_02_044859_create_students_table', 25),
-(55, '2022_09_14_073621_create_teachers_table', 20),
-(62, '2022_11_06_073621_create_teachers_table', 17),
 (63, '2022_11_07_033323_create_subjects_table', 17),
 (65, '2022_11_07_062219_create_education_qualifications_table', 17),
 (109, '2014_10_12_000000_create_users_table', 18),
@@ -997,18 +1655,35 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (121, '2022_11_12_104745_create_exam_grades_table', 21),
 (122, '2022_11_15_094035_create_library_books_table', 21),
 (123, '2022_11_15_101316_create_book_categories_table', 21),
-(124, '2022_11_18_032521_create_librarians_table', 22),
 (126, '2022_11_18_061721_create_issu_books_table', 23),
 (128, '2022_11_18_180858_create_admin_resets_table', 24),
-(131, '2022_11_20_081539_create_accountants_table', 26),
 (132, '2022_11_23_055611_create_transports_table', 26),
-(133, '2022_11_07_044859_create_students_table', 27),
 (134, '2022_11_27_042907_create_inventory_categories_table', 28),
 (135, '2022_11_27_055912_create_invent_suppliers_table', 29),
 (153, '2022_11_27_070054_create_inventories_table', 30),
 (154, '2022_11_27_115226_create_inventory_identities_table', 30),
 (155, '2022_11_29_092856_create_lost_inventories_table', 30),
-(157, '2022_11_30_090708_create_supplier_invoices_table', 31);
+(157, '2022_11_30_090708_create_supplier_invoices_table', 31),
+(161, '2016_06_01_000001_create_oauth_auth_codes_table', 33),
+(162, '2016_06_01_000002_create_oauth_access_tokens_table', 33),
+(163, '2016_06_01_000003_create_oauth_refresh_tokens_table', 33),
+(164, '2016_06_01_000004_create_oauth_clients_table', 33),
+(165, '2016_06_01_000005_create_oauth_personal_access_clients_table', 33),
+(166, '2022_12_05_115739_create_assignments_table', 33),
+(169, '2022_12_11_052804_create_expances_table', 34),
+(175, '2022_11_06_073621_create_teachers_table', 36),
+(176, '2022_11_18_032521_create_librarians_table', 36),
+(177, '2022_11_20_081539_create_accountants_table', 36),
+(178, '2022_12_05_065002_create_staff_manages_table', 36),
+(181, '2022_12_11_063305_create_expancesive_lists_table', 37),
+(182, '2022_12_11_130158_create_employee_salaries_table', 37),
+(183, '2023_01_09_094117_create_funds_table', 38),
+(184, '2023_01_09_095230_create_main_heads_table', 38),
+(185, '2023_01_11_044710_create_credit_funds_table', 38),
+(186, '2023_01_11_121950_create_deposits_table', 38),
+(187, '2023_01_11_122027_create_expenses_table', 38),
+(188, '2023_01_12_055011_create_expense_partculers_table', 38),
+(191, '2022_11_07_044859_create_students_table', 39);
 
 -- --------------------------------------------------------
 
@@ -1078,6 +1753,109 @@ INSERT INTO `notices` (`id`, `school_id`, `title`, `notice`, `status`, `created_
 (7, NULL, 'Verification For Graduate Programs', 'assets/backend/notice/633684a0b65d6rabbi-hasan.pdf', 1, '2022-09-29 23:54:40', '2022-09-29 23:54:40'),
 (8, NULL, '2024 Verification For Graduate Programs', 'assets/backend/notice/633684afb1a64rabbi-hasan.pdf', 1, '2022-09-29 23:54:55', '2022-09-29 23:54:55'),
 (9, NULL, '2025 Verification For Graduate Programs', 'assets/backend/notice/633684c420dbbrabbi_cv.pdf', 1, '2022-09-29 23:55:16', '2022-09-29 23:55:16');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oauth_access_tokens`
+--
+
+CREATE TABLE `oauth_access_tokens` (
+  `id` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `user_id` bigint(20) UNSIGNED DEFAULT NULL,
+  `client_id` bigint(20) UNSIGNED NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `scopes` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `revoked` tinyint(1) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `expires_at` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `oauth_access_tokens`
+--
+
+INSERT INTO `oauth_access_tokens` (`id`, `user_id`, `client_id`, `name`, `scopes`, `revoked`, `created_at`, `updated_at`, `expires_at`) VALUES
+('4f9fa0b86eae13f05d02a66b5df1ccbd2a5042b3cebc1ce4ff86b735cfc6639efc1a2061911ac3a4', 4, 1, 'auth_token', '[]', 0, '2022-12-07 02:50:45', '2022-12-07 02:50:45', '2023-12-07 08:50:45'),
+('a9e9698685223c26d61f6babad004b75365cd22bec240a6b1fab8b1257ebe45fe19d317035407a11', 16, 1, 'auth_token', '[]', 1, '2022-12-07 01:23:46', '2022-12-07 01:23:46', '2023-12-07 07:23:46'),
+('b79b641564006f1ef71fdc874fce6a42072cde0f7bd8a684999c6c26b786afeb5090a15e7987c0e2', 16, 1, 'auth_token', '[]', 0, '2022-12-07 00:55:39', '2022-12-07 00:55:39', '2023-12-07 06:55:39');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oauth_auth_codes`
+--
+
+CREATE TABLE `oauth_auth_codes` (
+  `id` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `user_id` bigint(20) UNSIGNED NOT NULL,
+  `client_id` bigint(20) UNSIGNED NOT NULL,
+  `scopes` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `revoked` tinyint(1) NOT NULL,
+  `expires_at` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oauth_clients`
+--
+
+CREATE TABLE `oauth_clients` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `user_id` bigint(20) UNSIGNED DEFAULT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `secret` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `provider` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `redirect` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `personal_access_client` tinyint(1) NOT NULL,
+  `password_client` tinyint(1) NOT NULL,
+  `revoked` tinyint(1) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `oauth_clients`
+--
+
+INSERT INTO `oauth_clients` (`id`, `user_id`, `name`, `secret`, `provider`, `redirect`, `personal_access_client`, `password_client`, `revoked`, `created_at`, `updated_at`) VALUES
+(1, NULL, 'Laravel Personal Access Client', 'w1AXCuOjobIgbqsaeUJnnvIbL2zZRiNBF0bItY49', NULL, 'http://localhost', 1, 0, 0, '2022-12-06 23:51:04', '2022-12-06 23:51:04'),
+(2, NULL, 'Laravel Password Grant Client', 'KlzjSqaCDJG7GFthFVTSjC15q8ECzFAswtNCtWK8', 'users', 'http://localhost', 0, 1, 0, '2022-12-06 23:51:04', '2022-12-06 23:51:04');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oauth_personal_access_clients`
+--
+
+CREATE TABLE `oauth_personal_access_clients` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `client_id` bigint(20) UNSIGNED NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `oauth_personal_access_clients`
+--
+
+INSERT INTO `oauth_personal_access_clients` (`id`, `client_id`, `created_at`, `updated_at`) VALUES
+(1, 1, '2022-12-06 23:51:04', '2022-12-06 23:51:04');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oauth_refresh_tokens`
+--
+
+CREATE TABLE `oauth_refresh_tokens` (
+  `id` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `access_token_id` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `revoked` tinyint(1) NOT NULL,
+  `expires_at` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -1430,28 +2208,18 @@ INSERT INTO `permission_role` (`id`, `permission_id`, `role_id`, `created_at`, `
 (163, 70, 2, NULL, NULL),
 (164, 74, 2, NULL, NULL),
 (165, 2, 4, NULL, NULL),
-(166, 14, 4, NULL, NULL),
-(167, 18, 4, NULL, NULL),
-(168, 22, 4, NULL, NULL),
-(169, 26, 4, NULL, NULL),
-(170, 30, 4, NULL, NULL),
-(171, 34, 4, NULL, NULL),
-(172, 38, 4, NULL, NULL),
 (173, 42, 4, NULL, NULL),
 (174, 46, 4, NULL, NULL),
-(175, 50, 4, NULL, NULL),
 (176, 54, 4, NULL, NULL),
 (177, 55, 4, NULL, NULL),
 (178, 56, 4, NULL, NULL),
 (179, 57, 4, NULL, NULL),
 (180, 58, 4, NULL, NULL),
-(181, 66, 4, NULL, NULL),
-(182, 74, 4, NULL, NULL),
-(183, 39, 4, NULL, NULL),
-(184, 40, 4, NULL, NULL),
-(185, 41, 4, NULL, NULL),
 (186, 1, 7, NULL, NULL),
-(189, 46, 7, NULL, NULL);
+(189, 46, 7, NULL, NULL),
+(190, 59, 4, NULL, NULL),
+(191, 60, 4, NULL, NULL),
+(192, 61, 4, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -1470,6 +2238,13 @@ CREATE TABLE `personal_access_tokens` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `personal_access_tokens`
+--
+
+INSERT INTO `personal_access_tokens` (`id`, `tokenable_type`, `tokenable_id`, `name`, `token`, `abilities`, `last_used_at`, `created_at`, `updated_at`) VALUES
+(1, 'App\\Models\\Student', 4, 'auth_token', 'b7b099d1e79151492b97abf755e89034853058bee6d6dfdffa3f38fc0cab5abb', '[\"*\"]', NULL, '2022-12-07 02:42:14', '2022-12-07 02:42:14');
 
 -- --------------------------------------------------------
 
@@ -1570,14 +2345,20 @@ CREATE TABLE `sections` (
 --
 
 INSERT INTO `sections` (`id`, `section_name`, `class_id`, `created_at`, `updated_at`) VALUES
-(1, 'A', 1, '2022-11-03 00:03:07', '2022-11-03 00:03:07'),
-(2, 'B', 1, '2022-11-03 00:03:16', '2022-11-03 00:03:16'),
-(3, 'A', 2, '2022-11-03 00:03:25', '2022-11-03 00:03:25'),
-(5, 'A', 3, '2022-11-03 00:03:39', '2022-11-03 00:03:39'),
-(6, 'A', 4, '2022-11-03 00:03:47', '2022-11-03 00:03:47'),
-(7, 'A', 5, '2022-11-03 00:03:57', '2022-11-03 00:03:57'),
-(8, 'B', 5, '2022-11-03 00:04:05', '2022-11-03 00:04:05'),
-(9, 'D', 5, '2022-11-03 00:04:21', '2022-11-07 04:47:14');
+(1, 'A', 2, '2022-11-03 00:03:07', '2022-11-03 00:03:07'),
+(2, 'B', 2, '2022-11-03 00:03:16', '2022-11-03 00:03:16'),
+(3, 'A', 3, '2022-11-03 00:03:25', '2022-11-03 00:03:25'),
+(5, 'A', 4, '2022-11-03 00:03:39', '2022-11-03 00:03:39'),
+(6, 'A', 5, '2022-11-03 00:03:47', '2022-11-03 00:03:47'),
+(7, 'A', 6, '2022-11-03 00:03:57', '2022-11-03 00:03:57'),
+(10, 'A', 7, '2023-03-17 04:51:16', '2023-03-17 04:51:16'),
+(11, 'A', 8, '2023-03-17 04:51:26', '2023-03-17 04:51:26'),
+(13, 'Science', 9, '2023-03-17 04:51:48', '2023-03-17 04:51:48'),
+(14, 'Arts', 9, '2023-03-17 04:52:08', '2023-03-17 04:52:08'),
+(15, 'Bussiness', 9, '2023-03-17 04:52:24', '2023-03-17 04:52:24'),
+(16, 'Science', 10, '2023-03-17 04:52:40', '2023-03-17 04:52:40'),
+(17, 'Arts', 10, '2023-03-17 04:52:47', '2023-03-17 04:52:47'),
+(18, 'Bussiness', 10, '2023-03-17 04:52:57', '2023-03-17 04:52:57');
 
 -- --------------------------------------------------------
 
@@ -1631,6 +2412,42 @@ INSERT INTO `social_settings` (`id`, `school_id`, `title`, `icon`, `url`, `statu
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `staff_manages`
+--
+
+CREATE TABLE `staff_manages` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `role_id` bigint(20) UNSIGNED DEFAULT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `school_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `dob` date DEFAULT NULL,
+  `gender` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `address` mediumtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `qualification` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `phone` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `password` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `department` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `salary` double(10,2) DEFAULT NULL,
+  `adv_salary` double(10,2) DEFAULT NULL,
+  `remaining_salary` double(10,2) DEFAULT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `status` enum('1','0') COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '1',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `staff_manages`
+--
+
+INSERT INTO `staff_manages` (`id`, `role_id`, `name`, `school_id`, `dob`, `gender`, `address`, `qualification`, `phone`, `email`, `password`, `department`, `salary`, `adv_salary`, `remaining_salary`, `image`, `status`, `created_at`, `updated_at`) VALUES
+(1, NULL, 'Yolanda Bailey', NULL, '2015-05-03', 'female', '+1 (213) 539-4976', '+1 (728) 644-2932', '+1 (348) 425-6675', NULL, NULL, 'Qui harum aute numqu', 8000.00, NULL, NULL, 'assets/backend/teacher/639744ec3ce6d1.png', '1', '2022-12-12 09:12:44', '2022-12-12 09:12:44'),
+(2, NULL, 'Taylor Hurley', NULL, '1987-02-07', 'female', '+1 (751) 709-8006', '+1 (556) 749-3348', '+1 (231) 641-7444', NULL, NULL, 'Voluptatum aspernatu', 9000.00, NULL, NULL, 'assets/backend/teacher/639745003f2c81 (1).png', '1', '2022-12-12 09:13:04', '2022-12-12 09:13:04');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `students`
 --
 
@@ -1638,69 +2455,51 @@ CREATE TABLE `students` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `school_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `institute_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `branch` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `course` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `trade` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `class_roll` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `class` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `group` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `technology` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `semester` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `student_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `student_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `student_name_bn` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `birth_certificate_number` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `dob` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `nationality` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `religion` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `gender` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `blood_group` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `permanent_address` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `p_post_code` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `p_district` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `p_thana` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `persent_address` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `pre_post_code` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `pre_district` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `pre_thana` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `father_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `father_nid` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `father_occuoation` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `father_mobile_no` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `father_email` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `mother_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `mother_nid` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `mother_occopation` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `mother_mobile_no` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `mother_email` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `local_guardian_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `local_guardian_nid` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `local_guardian_relation` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `local_guardian_mobile_no` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `local_guardian_email` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `previous_institute_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `previous_class` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `previous_institute_address` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `previuous_result` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `student_phone_number` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `session` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `student_name_eng` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `student_name_ban` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `student_phone_1` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `student_phone_2` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `father_name_eng` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `father_name_ban` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `father_phone_1` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `father_phone_2` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `mother_name_eng` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `mother_name_ban` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `mother_phone_1` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `mother_phone_2` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `zila` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `upzila` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `union` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `post` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `ward` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `village` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `para` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `g_zila` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `g_upzila` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `g_union` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `g_post` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `g_ward` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `g_village` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `g_para` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `loc_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `loc_relation` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `loc_phone` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `loc_zila` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `loc_upzila` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `loc_union` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `loc_post` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `loc_ward` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `loc_village` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `loc_para` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `hostel` tinyint(4) NOT NULL DEFAULT 0,
-  `full_course_fee` double(10,2) NOT NULL DEFAULT 0.00,
-  `semester_fee` double(10,2) NOT NULL DEFAULT 0.00,
-  `internship_fee` double(10,2) NOT NULL DEFAULT 0.00,
-  `agreement` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `doc1` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `doc2` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `doc3` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `doc4` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `remarks` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `role_id` bigint(20) UNSIGNED NOT NULL,
-  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `other_activities` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `student_sign` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `guardian_sign` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `admitted_by_sign` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `class` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `class_roll` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `section` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `password` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `role_id` int(11) NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -1709,10 +2508,36 @@ CREATE TABLE `students` (
 -- Dumping data for table `students`
 --
 
-INSERT INTO `students` (`id`, `school_id`, `institute_name`, `branch`, `course`, `trade`, `image`, `class_roll`, `class`, `group`, `technology`, `semester`, `session`, `student_name_eng`, `student_name_ban`, `student_phone_1`, `student_phone_2`, `father_name_eng`, `father_name_ban`, `father_phone_1`, `father_phone_2`, `mother_name_eng`, `mother_name_ban`, `mother_phone_1`, `mother_phone_2`, `zila`, `upzila`, `union`, `post`, `ward`, `village`, `para`, `g_zila`, `g_upzila`, `g_union`, `g_post`, `g_ward`, `g_village`, `g_para`, `loc_name`, `loc_relation`, `loc_phone`, `loc_zila`, `loc_upzila`, `loc_union`, `loc_post`, `loc_ward`, `loc_village`, `loc_para`, `hostel`, `full_course_fee`, `semester_fee`, `internship_fee`, `agreement`, `doc1`, `doc2`, `doc3`, `doc4`, `remarks`, `role_id`, `email`, `password`, `other_activities`, `student_sign`, `guardian_sign`, `admitted_by_sign`, `created_at`, `updated_at`) VALUES
-(1, NULL, 'QUALITY EDUCATION SCHOOL & COLLEGE', 'Dhaka', '2', '1', 'assets/backend/img/student/6381ce41cc10cdownload (3).jpg', '101', '2', '3', 'computer', '1st Semester', '2021-2022', 'vufovolifa@mailinator.com', 'higuh@mailinator.com', 'tymomuc@mailinator.com', 'nedaq@mailinator.com', 'hamujocyzu@mailinator.com', 'wyhyv@mailinator.com', 'hawewos@mailinator.com', 'lemyneb@mailinator.com', 'conaxy@mailinator.com', 'tipyvufem@mailinator.com', 'qemyj@mailinator.com', 'hesaf@mailinator.com', '53', '401', '3668', 'Ducimus sit veniam', 'Laborum Earum aut c', 'Amet iure eligendi', 'Minus perferendis ex', '49', '379', '3428', 'Nobis delectus expe', 'Atque et sint labori', 'Natus praesentium su', 'Alias quia consequat', 'Heidi Dunlap', 'ryvybefadu@mailinator.com', 'podyb@mailinator.com', '2', '20', '210', 'Proident reprehende', 'Culpa nemo ipsam mol', 'Aliquid deserunt dol', 'Assumenda minima con', 0, 100000.00, 1000.00, 10000.00, 'Rem architecto delen', 'assets/backend/img/student/file/6381ce42ed75fimages (2).jpg', 'assets/backend/img/student/file/6381ce42f0955images (3).jpg', ' ', ' ', 'Rerum non corrupti', 7, 'student@gmail.com', '$2y$10$c/60YKcO1Im/3M7b9w5wKOT6OU1RNXd.3YTfGrVA/ib4zjXhTpL1a', 'Temporibus illum fu', NULL, NULL, NULL, '2022-11-26 02:28:52', '2022-11-26 02:28:52'),
-(2, NULL, 'QUALITY EDUCATION SCHOOL & COLLEGE', 'wukamymex@mailinator.com', '3', '2', 'assets/backend/img/student/6383382d7b210download (6).jpg', '500', '4', '6', 'electrical', '1st Semester', '2020-2021', 'jodigutira@mailinator.com', 'nehyxuzoze@mailinator.com', 'vevav@mailinator.com', 'nyxejy@mailinator.com', 'gylurobyr@mailinator.com', 'bazebe@mailinator.com', 'daxisogiqo@mailinator.com', 'wadaxuzot@mailinator.com', 'jurohylaw@mailinator.com', 'tubim@mailinator.com', 'vocozat@mailinator.com', 'kejiveze@mailinator.com', '14', '127', '1157', 'Similique odit assum', 'Labore libero volupt', 'Tenetur in et atque', 'Corrupti fugiat eu', '36', '276', '2474', 'Architecto omnis eos', 'Atque nesciunt in a', 'Dolore id cum ducimu', 'Enim voluptatum quis', 'Kameko Haynes', 'tudalizaq@mailinator.com', 'kewe@mailinator.com', '11', '97', NULL, 'Consequatur Cupidat', 'Debitis officiis eve', 'Quasi perferendis mo', 'Sint velit praesent', 0, 54654.00, 45645.00, 65465.00, 'Vitae laboriosam ob', 'assets/backend/img/student/file/6383382ece31cdownload (6).jpg', ' ', ' ', ' ', 'Voluptatem est qui', 7, 'xowovowok@mailinator.com', '$2y$10$7EwQRFv.lJH9GeavkmUF.uLkAVzztWx2arh/3Nf6A/QNpeb2ZzpOG', 'Dolores aperiam maxi', NULL, NULL, NULL, '2022-11-27 04:13:06', '2022-11-27 04:13:06'),
-(3, NULL, 'QUALITY EDUCATION SCHOOL & COLLEGE', 'Dhaka', '3', '2', 'assets/backend/img/student/638add3471cf8Screenshot (7).png', '202', '2', '3', 'electrical', '4th Semester', '2021-2022', 'Surjo', 'huraj@mailinator.com', 'jomu@mailinator.com', 'dobakoz@mailinator.com', 'gisavo@mailinator.com', 'punudepu@mailinator.com', 'zuzaqu@mailinator.com', 'viwanyhy@mailinator.com', 'vytowyho@mailinator.com', 'fekyqi@mailinator.com', 'qasatija@mailinator.com', 'sehufyru@mailinator.com', '18', '158', '1395', 'Sequi impedit moles', 'Voluptas ipsum sunt', 'Odio et est nostrum', 'Labore blanditiis en', '6', '56', '516', 'Blanditiis velit nos', 'Alias eligendi sit i', 'Molestiae nostrud fu', 'Iure cupiditate cons', 'Jemima Winters', 'litix@mailinator.com', 'wyriwityza@mailinator.com', '35', '269', '2418', 'Aut reprehenderit r', 'Quaerat quia quia pr', 'Veritatis voluptate', 'Necessitatibus qui c', 0, 56000.00, 5000.00, 10000.00, 'Exercitation ut quae', 'assets/backend/img/student/file/638add3695ddbScreenshot (7).png', ' ', ' ', ' ', 'Repellendus Qui quo', 7, 'surjo@gmail.com', '$2y$10$9AbOe7AkNHl0YjARALTF.eKm6spJe7rAyIglNdmAU1WkVcfxNY6sq', 'Quis repudiandae ass', NULL, NULL, NULL, '2022-12-02 23:23:02', '2022-12-02 23:23:02');
+INSERT INTO `students` (`id`, `school_id`, `institute_name`, `student_id`, `student_name`, `student_name_bn`, `birth_certificate_number`, `dob`, `nationality`, `religion`, `gender`, `blood_group`, `permanent_address`, `p_post_code`, `p_district`, `p_thana`, `persent_address`, `pre_post_code`, `pre_district`, `pre_thana`, `father_name`, `father_nid`, `father_occuoation`, `father_mobile_no`, `father_email`, `mother_name`, `mother_nid`, `mother_occopation`, `mother_mobile_no`, `mother_email`, `local_guardian_name`, `local_guardian_nid`, `local_guardian_relation`, `local_guardian_mobile_no`, `local_guardian_email`, `previous_institute_name`, `previous_class`, `previous_institute_address`, `previuous_result`, `student_phone_number`, `session`, `class`, `class_roll`, `section`, `email`, `password`, `image`, `role_id`, `created_at`, `updated_at`) VALUES
+(1, NULL, NULL, '200000', 'Urielle Berger', 'Dennis Hayden', '142', '28-Apr-2005', 'Animi impedit dolo', 'hindu', 'others', 'B-', 'Officiis voluptates', 'Velit enim consequat', 'Dolorum rerum quae p', 'Nihil harum non ad s', 'At ea ullamco adipis', 'Perspiciatis ea non', 'Dolores quia et a un', 'Qui quia sunt dolor', 'Claudia Porter', 'Ipsa adipisicing no', 'Et totam laborum Si', 'Maxime dolores venia', 'turoquj@mailinator.com', 'Sonya Gilliam', 'Quia est id dolor', 'Rem dolorem qui ipsu', 'Velit dolorem velit', 'tawyfu@mailinator.com', 'Abbot Patton', 'Quis quae ea error v', 'Elit quia fuga Lab', 'Doloribus totam veni', 'xejuxysa@mailinator.com', 'Fatima Gilmore', 'Magnam commodi irure', 'Tempora et nulla tem', 'Est deleniti et est', '+1 (943) 307-6478', '2021-2022', '9', '49', '13', 'kanahedy@mailinator.com', '$2y$10$.oFAPLiZEEU1feq3E5ktYuFB5e3AlIhyN9BCm5NrKUmFwBWqvLOPe', NULL, 7, '2023-03-17 05:05:05', '2023-03-17 05:05:05'),
+(2, NULL, NULL, '300000', 'Zena Massey', 'Cyrus Howell', '239', '29-May-1996', 'Blanditiis in harum', 'muslim', 'male', 'A+', 'Quaerat occaecat inc', 'Et aspernatur ipsum', 'Officia anim asperio', 'Fugiat sint et qua', 'Est unde exercitatio', 'Nostrum quidem anim', 'Impedit consectetur', 'In consequuntur labo', 'Emma Farmer', 'Quidem ipsam magni a', 'Tempore et quis ut', 'Id corrupti volupta', 'gujore@mailinator.com', 'Kaden Hudson', 'Quibusdam beatae rer', 'Voluptas possimus l', 'Aut aut quod assumen', 'makeq@mailinator.com', 'Daryl Nicholson', 'Tempora beatae ipsum', 'Dolor incididunt min', 'Excepteur sunt volup', 'guhoca@mailinator.com', 'Ulric Morton', 'Eos dolor veniam es', 'Est culpa eiusmod', 'Unde neque ea eligen', '+1 (923) 424-9978', '2019-2020', '7', '882', '10', 'bodyx@mailinator.com', '$2y$10$Mn98qqEYpA5qdJ9lVgJCL.C8Yqjb9TWyPGi11ELB0pwaogJLYdzg2', NULL, 7, '2023-03-17 05:09:09', '2023-03-17 05:09:09'),
+(3, NULL, NULL, '400000', 'Merrill Wilder', 'Amanda Sampson', '771', '28-Sep-1978', 'Enim ut dolore aliqu', 'muslim', 'female', 'O+', 'Eos sunt qui obcaec', 'Laborum Laboris cil', 'Sit animi aliquam', 'Eligendi praesentium', 'Consequuntur volupta', 'Eiusmod ut labore pr', 'In minus proident a', 'Ipsum quae laboris m', 'Halla Bradley', 'Reprehenderit verita', 'Impedit sit anim d', 'Officia quia est par', 'qyxobijus@mailinator.com', 'Orlando Skinner', 'Eum dolore qui ut au', 'Repellendus Quibusd', 'Architecto consectet', 'nerir@mailinator.com', 'Sonia Greene', 'Voluptatem velit eu', 'Sequi inventore culp', 'Et sint accusantium', 'midufas@mailinator.com', 'Hillary Matthews', 'Iste officia unde se', 'Dolorem culpa sint', 'Quo voluptate corrup', '+1 (914) 897-3119', '2021-2022', '7', '760', '10', 'pocar@mailinator.com', '$2y$10$OyOWW093WfyllLjdhNHlxehoEYTBr4DDb3rokCTIV7psUcSciMHPu', NULL, 7, '2023-03-17 05:09:37', '2023-03-17 05:09:37'),
+(4, NULL, NULL, '500000', 'Fritz Garcia', 'Desiree Taylor', '681', '14-Jul-1986', 'Sint earum ex qui i', 'muslim', 'others', 'AB-', 'Do dolores aperiam i', 'Voluptatem Ducimus', 'Adipisci asperiores', 'Magna saepe omnis ve', 'Veritatis distinctio', 'Molestiae ea aut ut', 'Aperiam libero ad ea', 'Ut Nam Nam consectet', 'Pamela Price', 'Irure dignissimos co', 'Dignissimos laborum', 'Quas cupiditate temp', 'murymaq@mailinator.com', 'Kieran Freeman', 'Quo placeat veniam', 'Proident expedita u', 'Dignissimos ad et fu', 'vineno@mailinator.com', 'Amanda Huff', 'Sint pariatur Simil', 'Ratione odio alias d', 'Ullamco dignissimos', 'jogotemage@mailinator.com', 'Casey Noble', 'Officia officiis est', 'Id modi ipsa amet', 'Dolor officia in exp', '+1 (603) 789-3974', '2021-2022', '10', '295', '16', 'hyvikaba@mailinator.com', '$2y$10$xIdog1TOET8QlhUtcOyYCuJ80J3t/yyYxex94ZIUOjjrMMzAa56CW', NULL, 7, '2023-03-17 05:09:55', '2023-03-17 05:09:55'),
+(5, NULL, NULL, '600000', 'Freya Henry', 'Fiona Harrell', '597', '01-Mar-2022', 'Provident dolor par', 'muslim', 'female', 'AB-', 'Voluptas voluptate e', 'Aut vero reprehender', 'Perspiciatis amet', 'Fugiat ullam quo nu', 'Sequi dicta quibusda', 'Doloribus fuga Aspe', 'Commodo ut culpa ull', 'Excepteur molestiae', 'Hope Dillard', 'Porro debitis ut sus', 'Quis nisi ut praesen', 'Consequatur ea veri', 'fapamyb@mailinator.com', 'Jolie Bradshaw', 'Commodi autem qui et', 'Et sunt officiis et', 'Et do quasi quasi es', 'mukobaham@mailinator.com', 'Stephanie Mayer', 'Culpa fuga Dolorem', 'Quaerat voluptates v', 'Exercitationem est q', 'lybikobyba@mailinator.com', 'Vincent Barry', 'Fuga Dignissimos mi', 'Neque consectetur e', 'Pariatur Qui qui nu', '+1 (342) 281-3846', '2021-2022', '6', '888', '7', 'noqidyzu@mailinator.com', '$2y$10$dLdNdw4o0CG33lkaIqskjuhXyeD1nINMyGrNibwhWz6Ky9iz7dgru', NULL, 7, '2023-03-17 05:10:09', '2023-03-17 05:10:09'),
+(6, NULL, NULL, '700000', 'Tanisha Roach', 'Emerald Mcconnell', '618', '05-Jan-1975', 'Deleniti doloremque', 'muslim', 'others', 'B+', 'Reprehenderit est f', 'Perferendis excepteu', 'At temporibus aut co', 'Velit laborum dolor', 'Rerum magni sint la', 'Voluptatibus quae ob', 'Aut ipsam praesentiu', 'Cum minus incididunt', 'Willow Gallegos', 'Adipisicing ea elit', 'Cillum culpa deleni', 'Enim mollit facilis', 'nivoz@mailinator.com', 'Heidi Lucas', 'Aute accusamus moles', 'Ut architecto sunt p', 'Accusantium aliquam', 'midymef@mailinator.com', 'Stone Riggs', 'Aute culpa et repre', 'Ullam consectetur s', 'Culpa et qui optio', 'kahukavad@mailinator.com', 'Lawrence Foreman', 'Repellendus Aut pro', 'Nihil impedit dolor', 'Quae id adipisicing', '+1 (608) 969-8388', '2020-2021', '4', '387', '5', 'wydinewo@mailinator.com', '$2y$10$Y1J1o05hHJxuKuqStBLSO.ZsSW8D/wJlKGIaXq6ggEZO7XGj9FMLK', NULL, 7, '2023-03-17 05:10:25', '2023-03-17 05:10:25'),
+(7, NULL, NULL, '800000', 'Ursa Navarro', 'Akeem Mooney', '275', '29-Mar-2019', 'Voluptatem odio sit', 'muslim', 'male', 'AB+', 'Eos veniam totam d', 'Quis a et duis culpa', 'Sed eiusmod qui elig', 'Blanditiis autem fug', 'Qui suscipit enim ve', 'Sunt modi fugiat eni', 'Officiis et minus au', 'Cupidatat ut eaque m', 'Ignacia Ryan', 'Ipsum voluptas moll', 'Quidem assumenda dol', 'Dolorem voluptas ips', 'rycy@mailinator.com', 'Cairo Obrien', 'Nisi ex modi sunt po', 'Atque nobis possimus', 'Libero in amet qui', 'gusihicon@mailinator.com', 'Daria Sampson', 'Fugiat nulla praesen', 'Et qui quam possimus', 'Placeat quis ration', 'vewokamy@mailinator.com', 'Colton Trujillo', 'Iste enim est et dis', 'Aut officiis labore', 'Est itaque ullamco', '+1 (527) 548-4504', '2021-2022', '2', '394', '1', 'qetymiq@mailinator.com', '$2y$10$cYZuDoCaTHB0QKhuutxAFuv53bIr8NnAvZly/UGeAjWBVysp5WRfy', NULL, 7, '2023-03-17 05:10:39', '2023-03-17 05:10:39'),
+(8, NULL, NULL, '900000', 'Avye Rodriguez', 'Jameson Dennis', '396', '30-Oct-1996', 'Laborum In voluptas', 'hindu', 'others', 'O+', 'Cumque aut duis ea a', 'Enim qui ut reprehen', 'Porro placeat susci', 'Dolor sint in maiore', 'Magna atque at quia', 'Suscipit labore aliq', 'Impedit impedit mi', 'Et est dolorem sit e', 'Bevis Wilkinson', 'Et consectetur est', 'Alias iste necessita', 'Harum officia dolor', 'gekibo@mailinator.com', 'Adele Love', 'Odit rem aut earum a', 'Reprehenderit laboru', 'Dolores ipsum qui sa', 'gobotudym@mailinator.com', 'Evangeline Clements', 'Ipsam ipsa distinct', 'Quasi velit amet a', 'Accusamus laudantium', 'xelixyx@mailinator.com', 'Imelda Travis', 'Aut pariatur Sed ex', 'Vel enim fuga Labor', 'Aut repudiandae eu c', '+1 (437) 164-7238', '2020-2021', '5', '639', '6', 'fubeqymeta@mailinator.com', '$2y$10$39hjdQvHWDfSOlqYRczQ/.1XKMkAt38ptSaSaxsD7ldombx5jzFOm', NULL, 7, '2023-03-17 05:10:51', '2023-03-17 05:10:51'),
+(9, NULL, NULL, '100000', 'Kylee Pace', 'Aaron Underwood', '87', '28-Jun-1995', 'Sunt veniam eos per', 'others', 'female', 'A+', 'Iusto quia minim qui', 'Incidunt duis volup', 'Ipsum dolorem qui co', 'Consequuntur asperna', 'Magna labore asperio', 'Sit commodo ullam d', 'Ipsum dolor sit nec', 'Sapiente ipsa odio', 'Davis Henson', 'Temporibus voluptas', 'Laboriosam voluptat', 'Sunt ad consequatur', 'welatu@mailinator.com', 'Oren Petty', 'Ad et sit quia ut a', 'Aut sit consectetur', 'Earum neque eiusmod', 'syqoqu@mailinator.com', 'Timon Ingram', 'Est ut quibusdam con', 'Tenetur eiusmod exer', 'Temporibus illo et p', 'boveb@mailinator.com', 'Fallon Ferrell', 'Perspiciatis et ven', 'Non non iusto facere', 'Ipsum enim rerum si', '+1 (208) 948-4863', '2021-2022', '8', '365', '11', 'cola@mailinator.com', '$2y$10$1PEOxpQn3qty1eQR3TqGzuaOWYnfH6OwcPa3TZ9kZn3/pTlsGdGKy', NULL, 7, '2023-03-17 05:11:06', '2023-03-17 05:11:06'),
+(10, NULL, NULL, '110000', 'Lucas Douglas', 'Nyssa Reese', '999', '20-May-2000', 'Velit et in sit veli', 'muslim', 'male', 'B+', 'Harum et porro recus', 'Qui tenetur dicta mo', 'Aut et hic explicabo', 'Autem culpa ipsum o', 'Eum id quos est qui', 'Sed sit in voluptas', 'Dolor sed voluptas e', 'Consequatur mollit i', 'Orlando Phillips', 'Sunt tempore id tem', 'Aliquid aperiam alia', 'Quo quia ea aliquam', 'hejany@mailinator.com', 'Diana Orr', 'Ut anim eiusmod offi', 'Minima consectetur', 'Fugiat et vel saepe', 'luvojyf@mailinator.com', 'Vladimir Bray', 'Distinctio Sint qua', 'Enim esse cupidatat', 'Voluptates illo haru', 'bicazuv@mailinator.com', 'Ezekiel Lane', 'Qui autem et et obca', 'In libero quidem min', 'Magnam ut sapiente f', '+1 (242) 348-6794', '2020-2021', '6', '173', '7', 'xosuz@mailinator.com', '$2y$10$Z3UJMHeo0MnNITmxQBQMkeZbXEyAOlgNpM9IMwsdW454ONtXXUFe.', NULL, 7, '2023-03-17 05:11:21', '2023-03-17 05:11:21'),
+(11, NULL, NULL, '120000', 'Abra Delgado', 'Rama Fleming', '532', '19-Nov-1984', 'Aspernatur et dolore', 'hindu', 'others', 'O+', 'Molestias ad officia', 'Aspernatur soluta qu', 'Aut earum id ipsum', 'Nesciunt vero cillu', 'Magnam dolor obcaeca', 'Dolor est labore cu', 'Amet sint doloribus', 'In doloremque aut qu', 'Pascale Cunningham', 'Tempore consequatur', 'Accusantium quaerat', 'Amet harum quas sae', 'nuvi@mailinator.com', 'Kelsey Frederick', 'Eiusmod rerum volupt', 'In pariatur Deserun', 'Mollit esse at corru', 'syxizuzu@mailinator.com', 'Melissa Marsh', 'In fugiat inventore', 'Animi sed voluptate', 'Aspernatur accusanti', 'tuhitule@mailinator.com', 'Alexa Simon', 'Voluptatem Velit et', 'Explicabo Inventore', 'Repellendus Iure in', '+1 (621) 848-5799', '2019-2020', '9', '953', '13', 'nasysytony@mailinator.com', '$2y$10$t2WM0k9cgLnbbZp.Jn2TEeH7V42Zh0.1hZ6w7dh55jKZB5DaRNrXK', NULL, 7, '2023-03-17 05:11:33', '2023-03-17 05:11:33'),
+(12, NULL, NULL, '130000', 'Cherokee Herring', 'Shaeleigh Acosta', '449', '28-Feb-2003', 'Quasi unde voluptate', 'others', 'male', 'AB-', 'Est tempore rerum s', 'Iusto irure non ut c', 'Maxime laudantium e', 'Dolor qui voluptate', 'Id autem velit et at', 'Aspernatur aut amet', 'Quas ea veniam dese', 'Reiciendis iusto ea', 'Kameko Owens', 'Tenetur numquam ut o', 'Culpa quis consectet', 'Eaque fuga Ea moles', 'zorofofoj@mailinator.com', 'Britanni Gallagher', 'Qui cupiditate conse', 'Quibusdam vel fugiat', 'Quibusdam sapiente d', 'nazesu@mailinator.com', 'Arthur Gilbert', 'Culpa cupidatat labo', 'Voluptas pariatur T', 'Cum unde beatae arch', 'vyde@mailinator.com', 'Ethan Montoya', 'Aut praesentium cupi', 'Et velit dolore qui', 'Sit culpa laudantium', '+1 (173) 748-4474', '2020-2021', '7', '946', '10', 'fahisinihy@mailinator.com', '$2y$10$RgjvlF7zj/0E8rAmr0xpVedFqlyfEdCWE9KcM7hzlbQ57V2qViJr2', NULL, 7, '2023-03-17 05:11:49', '2023-03-17 05:11:49'),
+(13, NULL, NULL, '140000', 'Xantha Ferguson', 'Lenore Puckett', '540', '01-May-1972', 'Qui nulla non itaque', 'others', 'female', 'O-', 'Et nostrud ut dolore', 'Error aut delectus', 'Laboriosam facere p', 'Vero aliquid dolorem', 'Sed consectetur ipsu', 'Est minim et reicien', 'Voluptatem proident', 'Veniam quia quia in', 'Ciara Ray', 'Nisi veniam aut nul', 'Dolore et veniam la', 'Illum omnis ipsum', 'lyfu@mailinator.com', 'Chadwick Lambert', 'Dolorem exercitation', 'Soluta dolorem eius', 'Eveniet expedita no', 'jetu@mailinator.com', 'Irene Lopez', 'Deserunt iusto est l', 'Distinctio Labore e', 'Quidem aliqua Molli', 'leqe@mailinator.com', 'Mohammad Norton', 'Esse quod in asperna', 'Ea deleniti nesciunt', 'Ea et distinctio Re', '+1 (418) 715-2741', '2021-2022', '8', '142', '11', 'havu@mailinator.com', '$2y$10$oCxN779AatynRFAXJMzfru/.rSBVCOhDdLT0PgwLNKrc0MDBwe4N2', NULL, 7, '2023-03-17 05:12:03', '2023-03-17 05:12:03'),
+(14, NULL, NULL, '150000', 'Kellie Irwin', 'Hasad Long', '480', '05-Feb-1971', 'Minus at sequi sequi', 'muslim', 'others', 'O-', 'Qui est ratione lore', 'Est similique hic a', 'Repudiandae nesciunt', 'Vel optio maiores p', 'Incidunt id eiusmod', 'Eos provident volup', 'Quibusdam unde aliqu', 'Velit non similique', 'Imogene Woodward', 'Esse necessitatibus', 'Soluta est nemo offi', 'Inventore quae volup', 'lywi@mailinator.com', 'Hannah Wolf', 'Et sit consectetur', 'Quo qui numquam elig', 'Ex qui aliquid qui d', 'qyla@mailinator.com', 'Danielle Fry', 'Aut similique debiti', 'Cum a incidunt est', 'Nihil mollit similiq', 'lybavixiza@mailinator.com', 'Leslie Clark', 'Reprehenderit volup', 'Deleniti pariatur M', 'Quia dolore eligendi', '+1 (264) 543-6484', '2020-2021', '10', '19', '16', 'qylatyn@mailinator.com', '$2y$10$U9avXhk9UruiyXWcb5CBg.9Si6Q20lxMtmApyaZnkpowywdfcmbMi', NULL, 7, '2023-03-17 05:12:17', '2023-03-17 05:12:17'),
+(15, NULL, NULL, '160000', 'Sawyer Gaines', 'Coby Skinner', '71', '09-Jul-1980', 'Aute aliqua Accusan', 'others', 'others', 'B+', 'Quae Nam ut similiqu', 'Dignissimos in eos o', 'Quia aperiam eiusmod', 'Iste dolor maxime ut', 'Et ex quis impedit', 'Vitae natus praesent', 'Velit aut aspernatur', 'Non qui in et qui se', 'Bianca Glover', 'Perferendis culpa ne', 'Inventore incidunt', 'Eveniet illo aut ex', 'jakimywo@mailinator.com', 'Yuri Espinoza', 'Aut doloribus conseq', 'Voluptate rerum comm', 'Nisi placeat illum', 'koraz@mailinator.com', 'Brock Lawson', 'Qui adipisicing cupi', 'Officiis placeat ha', 'Ut aperiam velit dol', 'howexu@mailinator.com', 'Deirdre Donovan', 'Aute nobis in volupt', 'A mollit culpa temp', 'Ad nesciunt libero', '+1 (858) 634-9034', '2020-2021', '2', '975', '1', 'wusedoqo@mailinator.com', '$2y$10$syU4A1QEw984S/YBX8XXvub2g2..2FVXbCxhpmsPulAbD1fumbEHy', NULL, 7, '2023-03-17 05:12:31', '2023-03-17 05:12:31'),
+(16, NULL, NULL, '170000', 'Judith Cote', 'Karleigh Hardy', '274', '29-Dec-1982', 'Ratione rerum sit r', 'muslim', 'others', 'O+', 'In quas id veniam r', 'Est et reiciendis cu', 'Ad ut fugiat dolore', 'Vel id fugiat sed v', 'Pariatur Facilis as', 'Dignissimos modi vel', 'Magni dignissimos di', 'Eum accusamus quod N', 'Jacob Joseph', 'Et atque enim quod p', 'Esse fugiat dolorem', 'Exercitationem dolor', 'fucah@mailinator.com', 'Alan Snyder', 'Dicta nostrud dignis', 'Voluptate mollitia f', 'Dicta ipsam et aperi', 'xiciw@mailinator.com', 'Winifred White', 'Tempora ut accusanti', 'Sunt voluptatum dol', 'Labore voluptates ma', 'lala@mailinator.com', 'Aubrey Dunn', 'Corrupti et elit d', 'Voluptas magnam tene', 'Quia qui ut repellen', '+1 (369) 135-1579', '2019-2020', '8', '456', '11', 'cozedofy@mailinator.com', '$2y$10$XtTBRFjLneVTwOYJUM.r4.RzbOzr6b6IMTg6KFfprsd/x3FTHyGEi', NULL, 7, '2023-03-17 05:12:52', '2023-03-17 05:12:52'),
+(17, NULL, NULL, '180000', 'Thomas Sloan', 'Hanae Glover', '671', '19-Apr-1997', 'Aut quas et ad ullam', 'others', 'female', 'AB-', 'Tempor perferendis q', 'Expedita voluptas ma', 'Numquam facilis eos', 'Omnis aut consequatu', 'Cillum quidem fuga', 'Labore esse repudian', 'Quisquam corrupti s', 'Voluptas et voluptat', 'Kelly Mason', 'Aut rerum et et inci', 'A eos delectus mol', 'Magnam amet porro e', 'mymyrav@mailinator.com', 'Martin Velasquez', 'Esse amet in in mol', 'Modi et in consequat', 'Quis et nihil dolore', 'lozalu@mailinator.com', 'Frances Cobb', 'Occaecat laboris ver', 'Iure sed adipisicing', 'Mollit harum quis to', 'mibiq@mailinator.com', 'Sheila Sexton', 'Fuga Perferendis ad', 'Consectetur ducimus', 'Beatae maiores verit', '+1 (965) 174-2039', '2020-2021', '4', '242', '5', 'tedus@mailinator.com', '$2y$10$Zy8WhuKmD.QHuG.jwqB1Te8Oz4ynMwd5kBoZXW8u0t6p0a72odrAi', NULL, 7, '2023-03-17 05:13:52', '2023-03-17 05:13:53'),
+(18, NULL, NULL, '190000', 'Judith Monroe', 'Sharon Bowers', '893', '12-Feb-2010', 'In atque laudantium', 'others', 'male', 'AB-', 'Quae deleniti nesciu', 'Blanditiis dolor sit', 'Ea ratione molestiae', 'Libero in consequatu', 'Consequat Facere ut', 'Quis aperiam sunt ve', 'Rem dolores id dolor', 'Dolores necessitatib', 'Shelly Brennan', 'Eligendi quo qui tem', 'Iusto sed placeat i', 'Sit velit laborum v', 'daha@mailinator.com', 'Britanney Mcmillan', 'Maxime duis omnis al', 'Sit eius et ut quos', 'Minim unde sed volup', 'fagewoceso@mailinator.com', 'Nigel Church', 'Fugiat do qui adipi', 'Laborum consequat C', 'Sed minima ut ullamc', 'bezewobil@mailinator.com', 'Lucas Clayton', 'Id voluptatem dolore', 'Fuga Ab nihil eius', 'Qui animi atque fug', '+1 (737) 383-1162', '2020-2021', '5', '796', '6', 'qinety@mailinator.com', '$2y$10$.eKXdF8f/kbnFCWYF59Rou0NJjh76sSTDzg0bA2Ru3Ne4BzGn8nFy', NULL, 7, '2023-03-17 05:14:09', '2023-03-17 05:14:09'),
+(19, NULL, NULL, '200000', 'Karina Rios', 'Vielka Rutledge', '936', '20-Sep-2000', 'Ad cupiditate adipis', 'muslim', 'others', 'O+', 'In similique quasi n', 'A in consequatur qu', 'Sed in cupiditate se', 'Nobis necessitatibus', 'Enim eligendi natus', 'Odit quo laborum con', 'Consequatur Veritat', 'Dolore aut dolore ad', 'Autumn Woodward', 'Eveniet dolore cons', 'Cillum excepteur rem', 'Quidem et dignissimo', 'fozov@mailinator.com', 'Karen Scott', 'Suscipit recusandae', 'Quaerat iste fugiat', 'Ratione nulla explic', 'kedewi@mailinator.com', 'Brynn Mckay', 'Ducimus officia nul', 'Nostrum beatae ut cu', 'Inventore sed aute d', 'bonuhe@mailinator.com', 'Shelly Flowers', 'Iusto quod veritatis', 'Tempore tempora del', 'Nostrum quia delenit', '+1 (195) 918-1467', '2020-2021', '2', '542', '1', 'lato@mailinator.com', '$2y$10$eyVO/Tqv9i.GsOalLn0zWOuxneyJp5Huqe0VMmVek7uQkY2grBrVO', NULL, 7, '2023-03-17 05:14:21', '2023-03-17 05:14:21'),
+(20, NULL, NULL, '210000', 'Noah Noel', 'Patricia Goff', '108', '09-Jul-1984', 'Quasi voluptas ad mo', 'hindu', 'others', 'O+', 'Dolor qui consequat', 'Incidunt laboriosam', 'Veniam in provident', 'Culpa obcaecati eli', 'Ullamco cupidatat ar', 'Et eum in dolor aliq', 'Aperiam eaque volupt', 'Ducimus veniam off', 'Keaton Byers', 'In fuga Iusto quae', 'Sunt facere ratione', 'Possimus exercitati', 'dibarotovi@mailinator.com', 'Mannix Wallace', 'Quaerat molestiae ex', 'Esse excepteur enim', 'Neque eos vitae aut', 'fibimylux@mailinator.com', 'Vance Payne', 'Dignissimos assumend', 'Porro temporibus est', 'Ea dicta quibusdam v', 'coky@mailinator.com', 'Kitra Woodward', 'Vel cillum aliqua E', 'Enim rerum reprehend', 'Laboris ipsum qui v', '+1 (833) 584-5781', '2019-2020', '7', '977', '10', 'pehesarom@mailinator.com', '$2y$10$82TxhtEG7iOsw3EFNKlwq.0XkwR3N83G4qFf050AwK66dMHWRcjBy', NULL, 7, '2023-03-17 05:14:34', '2023-03-17 05:14:34'),
+(21, NULL, NULL, '220000', 'Angela Henry', 'Armand Glover', '593', '18-Aug-2015', 'Quia tempor libero s', 'muslim', 'female', 'A+', 'Aut impedit et veli', 'Sed dolorum itaque f', 'Temporibus voluptate', 'Dolorem pariatur Si', 'Voluptates voluptate', 'Consequatur Quia ir', 'Aut ut quasi volupta', 'Molestiae maxime fug', 'Imani Velez', 'In in qui autem offi', 'Aliquip pariatur Eu', 'Incididunt lorem ill', 'mivymo@mailinator.com', 'Cleo Moran', 'Vero aut aliqua Id', 'Ducimus deserunt ac', 'Reprehenderit et cu', 'cedojeqic@mailinator.com', 'Hunter Gaines', 'Id in et libero con', 'Eveniet ad commodi', 'Quam autem consequun', 'tucizone@mailinator.com', 'Quinlan Conner', 'Aut in ad voluptatem', 'Id eos placeat cum', 'Magna nisi aut venia', '+1 (816) 781-7217', '2019-2020', '3', '714', '3', 'zocejogyzy@mailinator.com', '$2y$10$s3IMqtcBtXHX4ILOA81Vu.tIP6fu/JQ1SxZ/pjK/7xuIYHzkxR.Uu', NULL, 7, '2023-03-17 05:14:49', '2023-03-17 05:14:49'),
+(22, NULL, NULL, '230000', 'Mason Daniel', 'Ocean Lawson', '197', '07-May-1973', 'Excepteur fugiat ex', 'hindu', 'female', 'AB-', 'Et impedit providen', 'In ad anim cillum se', 'Quae consequat Sit', 'Eos voluptas optio', 'Tempora adipisicing', 'Voluptatem consectet', 'Magna atque autem vo', 'Eligendi et aspernat', 'Penelope York', 'Sed fuga Id aliquam', 'Aute pariatur Est n', 'Autem eveniet magna', 'waheqa@mailinator.com', 'Karyn Bond', 'Excepteur aut dolore', 'Est beatae et aperia', 'Voluptas impedit fu', 'wirul@mailinator.com', 'Nina Emerson', 'Non ab sapiente quis', 'Architecto nostrum b', 'Quisquam odit tempor', 'mexibut@mailinator.com', 'Selma Foreman', 'Aut iusto reprehende', 'Dolor possimus mole', 'Libero lorem molesti', '+1 (394) 722-6134', '2020-2021', '10', '491', '16', 'hofexetobi@mailinator.com', '$2y$10$VGVMfcK/BasdYF69rGt2oe3XpaKcGAFnEqkFFcFjTkchGEOpc9Q9y', NULL, 7, '2023-03-17 05:15:01', '2023-03-17 05:15:01'),
+(23, NULL, NULL, '240000', 'Samantha Mendez', 'Wang Mann', '570', '05-Dec-2008', 'At aspernatur natus', 'hindu', 'female', 'B-', 'Tempora et magna non', 'Enim necessitatibus', 'Libero est qui velit', 'Voluptate nihil sed', 'Sed molestiae commod', 'Autem maiores dolori', 'Neque velit lorem e', 'Irure eu mollit fuga', 'Fatima Good', 'Doloremque nihil nis', 'Placeat quaerat nos', 'Voluptatem Illo qui', 'vyvu@mailinator.com', 'Charlotte Malone', 'Eu ipsa aut delenit', 'Tempore velit alias', 'Nulla a ab eius plac', 'ryzonoq@mailinator.com', 'Myra Acosta', 'Odio id amet quae', 'Sint cumque recusand', 'Quisquam eu tenetur', 'ximi@mailinator.com', 'Phelan Benjamin', 'Fugiat in aliquip id', 'Distinctio Unde ani', 'Similique possimus', '+1 (892) 694-2625', '2019-2020', '5', '174', '6', 'xiguge@mailinator.com', '$2y$10$XivbmYOkK9uPwAcI8xjcge.CMcUgADS7l8Xgm7Dp6STqk7bPfK1dq', NULL, 7, '2023-03-17 05:15:13', '2023-03-17 05:15:13'),
+(24, NULL, NULL, '250000', 'Luke Long', 'Axel Potts', '179', '23-Sep-1990', 'Aut in esse nisi po', 'others', 'others', 'A+', 'Aliquip officia laud', 'Perspiciatis animi', 'Eius quo quos amet', 'Qui asperiores perfe', 'Tempor Nam nostrum q', 'Ea cupidatat quidem', 'Sit et voluptates ve', 'Voluptatem Error eu', 'Dorothy Gentry', 'Ea in dolor porro ul', 'Amet quia nihil num', 'Qui perspiciatis cu', 'qerebet@mailinator.com', 'Guy Mclean', 'Qui et veritatis ips', 'Incididunt voluptate', 'Est pariatur Nemo n', 'lebobenil@mailinator.com', 'Abra Marsh', 'Velit excepteur sed', 'Ducimus quod sapien', 'Laboriosam in assum', 'tijo@mailinator.com', 'Daphne Bentley', 'Labore autem sunt au', 'Et ratione sint id', 'Illo distinctio Dui', '+1 (498) 357-9212', '2019-2020', '7', '138', '10', 'xato@mailinator.com', '$2y$10$eiaLGfndzc3kphUTSp.irOCA/WCNBHXA7Ws3VdlaA5Ujs5DTnP1sK', NULL, 7, '2023-03-17 05:15:24', '2023-03-17 05:15:24'),
+(25, NULL, NULL, '260000', 'Macey Rios', 'Xena Rivers', '497', '17-Feb-1970', 'Fugiat fugiat volup', 'hindu', 'female', 'O+', 'Voluptatem voluptate', 'Labore ad maiores co', 'Soluta omnis aut exe', 'Quia molestias ad no', 'Sequi elit sit inc', 'Ad accusamus natus q', 'Perferendis voluptat', 'Libero nesciunt des', 'Brady Foster', 'Quisquam cupidatat f', 'Sunt atque sed fuga', 'Quo velit totam quis', 'fufi@mailinator.com', 'Harriet Fisher', 'Quos quia autem est', 'Sit consequat Inci', 'Dolorem magni volupt', 'sydezevom@mailinator.com', 'Mechelle Colon', 'Illo est veniam en', 'Nam dolor eum praese', 'Minima qui sed fugia', 'zuxagevypu@mailinator.com', 'Upton Short', 'Amet porro rerum cu', 'Deserunt aut quia ex', 'Temporibus eiusmod v', '+1 (258) 156-4855', '2020-2021', '3', '703', '3', 'banibi@mailinator.com', '$2y$10$IMJNJ1c4.xImo0v2G44Z8ulTnwdUw6fAg9KVCg42IiIq/Fj0bo2jW', NULL, 7, '2023-03-17 05:15:43', '2023-03-17 05:15:43'),
+(26, NULL, NULL, '270000', 'Belle Newman', 'Leandra Cannon', '273', '26-Jan-1977', 'Sapiente perspiciati', 'others', 'female', 'O+', 'Est sed non omnis a', 'Eligendi enim adipis', 'Quidem in animi fac', 'Nam a quaerat atque', 'Ut ut voluptates eli', 'Magni quod dolor Nam', 'Ducimus consectetur', 'Id velit hic deseru', 'Hedwig Peterson', 'Magna saepe qui saep', 'Enim nisi quis aut i', 'Autem iste elit ill', 'nikete@mailinator.com', 'Yoko Gordon', 'Et praesentium qui d', 'Tempore dolores ear', 'Incidunt sint quis', 'riletiwulu@mailinator.com', 'Rhiannon Cook', 'Atque sapiente dolor', 'Ut ratione quis accu', 'Debitis do sunt exer', 'kocecuqosi@mailinator.com', 'Garrison Phillips', 'Qui in aut a expedit', 'Dolores laudantium', 'Ullam qui quidem omn', '+1 (228) 694-2093', '2019-2020', '4', '64', '5', 'zopure@mailinator.com', '$2y$10$C6tFZRRz8DrVZeFneuXKFeGmTlFgiGfjMYlNV5WH/o1.XDQDhhNci', NULL, 7, '2023-03-17 05:15:55', '2023-03-17 05:15:55'),
+(27, NULL, NULL, '280000', 'Hyatt Lindsey', 'Caldwell Blair', '695', '27-Jan-2001', 'Deserunt sint ut ani', 'others', 'male', 'A+', 'Sint nulla eius id a', 'Nostrud minima aliqu', 'Ipsum ut cupiditate', 'In asperiores corrup', 'Nobis beatae cupidit', 'Consequatur ex natu', 'Exercitationem neque', 'Aliquid facilis ut o', 'Jarrod Schultz', 'Esse possimus quis', 'Autem et pariatur M', 'Et veniam qui in re', 'hybogapusi@mailinator.com', 'Ahmed Malone', 'Odio nulla voluptate', 'Et dolor officia dol', 'Eos occaecat offici', 'decikyvin@mailinator.com', 'Linus Aguilar', 'Eaque est est volupt', 'Incididunt dolorum e', 'Distinctio Est inve', 'sizapiq@mailinator.com', 'Joseph Hurley', 'Et tempor Nam commod', 'Voluptate nihil simi', 'Expedita occaecat no', '+1 (585) 337-9384', '2019-2020', '8', '561', '11', 'xylydigipo@mailinator.com', '$2y$10$VhBnlZdwC0nkGQmfmQvkoeV1BXIzZ/.68MXjwM7mb.dw6C4sGx3ei', NULL, 7, '2023-03-17 05:16:09', '2023-03-17 05:16:09'),
+(28, NULL, NULL, '290000', 'Kelly Bryan', 'Nayda Britt', '147', '02-Jul-2009', 'Fuga Tempore neque', 'others', 'male', 'O-', 'Voluptas fugiat nes', 'Odio lorem omnis qui', 'Labore ad Nam dolori', 'Voluptas eveniet mo', 'Culpa voluptas rerum', 'Enim in eum ratione', 'Quos enim Nam repell', 'Ut quos voluptatem', 'Jermaine Decker', 'Eum duis voluptas qu', 'Ut sunt voluptatem', 'Pariatur Possimus', 'redexequn@mailinator.com', 'Fatima Good', 'Dignissimos sit eu', 'Alias aut necessitat', 'Minus fugiat id quia', 'ciluzin@mailinator.com', 'Haviva Marks', 'Tenetur eaque deseru', 'Omnis maxime ad cons', 'Ut error ea sit ipsa', 'sobokofi@mailinator.com', 'Jason Greene', 'In quidem debitis od', 'Non voluptas sunt un', 'Vitae rem est sit', '+1 (148) 901-2555', '2021-2022', '4', '194', '5', 'duka@mailinator.com', '$2y$10$lEwiWIU.NLzJlaIacQrsXuXISuHOxW7TnHEsPhtx4iY.TnBZPHBHS', 'assets/backend/img/student/64144d64b081bWhatsApp Image 2023-03-13 at 1.09.38 PM.jpeg', 7, '2023-03-17 05:22:13', '2023-03-17 05:22:13'),
+(29, NULL, NULL, '300000', 'Derek Mcgowan', 'Brooke Lindsey', '529', '28-Apr-1975', 'Dolorum reprehenderi', 'muslim', 'female', 'B+', 'Vero sit sit ut et', 'Ad corrupti volupta', 'Et ut adipisicing id', 'Consectetur placeat', 'Nobis architecto do', 'Dolore aut rerum adi', 'A magni sunt culpa', 'Aliquid aperiam obca', 'Salvador Ferrell', 'Eum illo quidem dict', 'Nostrum earum debiti', 'Aut temporibus volup', 'gywysuz@mailinator.com', 'Shelby Barnes', 'Eiusmod est deserunt', 'Rerum qui similique', 'Velit fugiat quo sae', 'hylojalede@mailinator.com', 'Dana Kramer', 'In nisi accusamus vo', 'Et non excepteur eli', 'Excepteur saepe sed', 'wutepydedo@mailinator.com', 'Berk Kane', 'Consectetur elit at', 'Quaerat et mollit ex', 'Numquam sint evenie', '+1 (192) 678-9625', '2021-2022', '6', '654', '7', 'tuba@mailinator.com', '$2y$10$Xad6Nfv/7NWeDmhimTPoMep/RjGqHGl3zwPFJx20T2VzGt1n1Sl4a', 'assets/backend/img/student/6415e4dea7d24WhatsApp Image 2023-03-13 at 1.09.38 PM.jpeg', 7, '2023-03-18 10:20:47', '2023-03-18 10:20:47');
 
 -- --------------------------------------------------------
 
@@ -1828,7 +2653,7 @@ INSERT INTO `supplier_invoices` (`id`, `school_id`, `product_id`, `total_price`,
 
 CREATE TABLE `teachers` (
   `id` bigint(20) UNSIGNED NOT NULL,
-  `role_id` int(2) DEFAULT NULL,
+  `role_id` bigint(20) UNSIGNED DEFAULT NULL,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `school_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `designation` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -1839,6 +2664,7 @@ CREATE TABLE `teachers` (
   `phone` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `email` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `salary` double(10,2) DEFAULT NULL,
   `department` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `fb` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `twitter` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -1854,25 +2680,12 @@ CREATE TABLE `teachers` (
 -- Dumping data for table `teachers`
 --
 
-INSERT INTO `teachers` (`id`, `role_id`, `name`, `school_id`, `designation`, `dob`, `gender`, `address`, `qualification`, `phone`, `email`, `password`, `department`, `fb`, `twitter`, `linkden`, `subject`, `image`, `status`, `created_at`, `updated_at`) VALUES
-(1, 4, 'Jessamine Rivers', NULL, 'Quis amet dolor nob', '2013-11-07', 'female', 'Est fugit laborum', 'milygyjuku@mailinator.com', '+1 (884) 736-3766', 'finimoresi@mailinator.com', '$2y$10$Svf2zdeKsVHU4OHMEhvE9.oqh7F8R75bJp712d/f/xJ/r/91GJL0O', 'Eiusmod vitae qui ve', 'Qui non pariatur Ea', 'Minus ut sed dolorem', 'Id expedita sed reru', NULL, 'assets/backend/teacher/63693dd04af0ddownload (1).jpg', '1', '2022-11-07 11:18:09', '2022-11-07 11:18:09'),
-(2, 4, 'Roth Moody', NULL, 'In error sapiente ve', '1987-12-06', 'female', 'Placeat expedita eu', 'rega@mailinator.com', '+1 (236) 836-4775', 'vugiba@mailinator.com', '$2y$10$fnSZQlASfRlgjAxPZbrzIOrYgIrNzHzT84hFoepj0Ntdw82pmAKIy', 'Officia assumenda es', 'Sit perferendis omn', 'Incididunt provident', 'Est irure sit volup', NULL, 'assets/backend/teacher/63693de4d8b17download (2).jpg', '1', '2022-11-07 11:18:29', '2022-11-07 11:18:29'),
-(3, 4, 'Cole Holcomb', NULL, 'Sunt quas animi a q', '2008-03-23', 'female', 'Quod nostrud magna p', 'coneqyc@mailinator.com', '+1 (111) 124-9158', 'jabubo@mailinator.com', '$2y$10$3KTkjRuI1SVrOgOUQkVyzO59Spq1X/t/yBqnwdmheHdLydi1z0m/q', 'Quos reprehenderit v', 'Et exercitation quas', 'Rerum quisquam atque', 'Provident quas magn', NULL, 'assets/backend/teacher/636c9cdf656bbdownload (1).jpg', '1', '2022-11-10 00:40:33', '2022-11-10 00:40:33'),
-(4, 4, 'Jayme Morris', NULL, 'Ut quam aut voluptat', '1990-04-25', 'female', 'Reiciendis dicta vol', 'nurufeni@mailinator.com', '+1 (633) 121-5006', 'qywo@mailinator.com', '$2y$10$leBLlNUAurUhrJAAnMKkWObjcGB.nfWZIu3XBK8LaSf6JXwWXdy66', 'Provident maiores e', 'Id enim aute quis en', 'Quia laudantium off', 'Aspernatur et blandi', NULL, 'assets/backend/teacher/636c9cfc862c6download (3).jpg', '1', '2022-11-10 00:41:00', '2022-11-10 00:41:00'),
-(5, 4, 'Wynne Chen', NULL, 'Ab quas temporibus a', '2002-12-14', 'male', 'Qui esse eu quis qui', 'heqitozis@mailinator.com', '+1 (855) 469-2981', 'zahaqydaqi@mailinator.com', '$2y$10$HvkN3bRNC.zijECs4mNs7.fy997xUsU0U0lZG4nxmIomiu5SQCMge', 'Tempora dolores tota', 'Veritatis et nostrum', 'Architecto unde dolo', 'Deserunt architecto', NULL, 'assets/backend/teacher/636c9d14ab080download (2).jpg', '1', '2022-11-10 00:41:25', '2022-11-10 00:41:25'),
-(6, 4, 'Halla Owens', NULL, 'Porro vel ut non nat', '2015-09-13', 'female', 'Quia fugit quia est', 'pypoqyf@mailinator.com', '+1 (665) 473-7805', 'conaliba@mailinator.com', '$2y$10$Q4X3Vr6OIiBseQcpWif5DuFEbjO0/mWYVlWYEvF/4Hfz4Uodm7qje', 'Nisi nisi placeat s', 'Saepe quo consequat', 'Maiores veniam poss', 'Perspiciatis nobis', NULL, 'assets/backend/teacher/636c9d220313fimages.jpg', '1', '2022-11-10 00:41:38', '2022-11-10 00:41:38'),
-(7, 4, 'Shana Buchanan', NULL, 'Neque omnis ea paria', '1994-09-09', 'male', 'Fuga Officia consec', 'xasif@mailinator.com', '+1 (696) 953-4186', 'gisy@mailinator.com', '$2y$10$.r5PECp6XY9R0qet0bQh7e1mV6FmxcMbpGDLNDioDx1ohIYCeRskq', 'Id dolore cillum et', 'Magni eum vitae veli', 'Ipsum quisquam aute', 'Iusto proident dolo', NULL, 'assets/backend/teacher/636c9d2f25186images (3).jpg', '1', '2022-11-10 00:41:51', '2022-11-10 00:41:51'),
-(8, 4, 'Penelope Aguilar', NULL, 'Rerum veniam delect', '2019-06-23', 'female', 'Dolore et ad ipsum i', 'nymyxaxa@mailinator.com', '+1 (656) 128-7273', 'rirezomur@mailinator.com', '$2y$10$SIVUzB4ZaezECT/w05PHC.3lFwVd64IiSFlKhjG1A2PBEYXzS.mo.', 'Ea dolore aut deleni', 'Voluptates cupiditat', 'Temporibus labore qu', 'Recusandae Aliquip', NULL, 'assets/backend/teacher/636c9d4091e7aimages (4).jpg', '1', '2022-11-10 00:42:08', '2022-11-10 00:42:08'),
-(9, 4, 'Clementine Pugh', NULL, 'Natus omnis eius eum', '1976-09-23', 'female', 'Consequuntur minima', 'gijadoca@mailinator.com', '+1 (326) 326-4144', 'cokisu@mailinator.com', '$2y$10$PyWXoHLlTXM.xiHZCB83CuYMB6Xdx669vhjGg/6trJz8DQWFLSqXW', 'Sint rerum est sit', 'Aut est non sit ali', 'Rem ut laboriosam d', 'Temporibus sint ad a', NULL, 'assets/backend/teacher/636c9d4ce2565download.jpg', '1', '2022-11-10 00:42:21', '2022-11-10 00:42:21'),
-(10, 4, 'Alisa Lara', NULL, 'Totam ut consequuntu', '2014-05-15', 'male', 'Doloremque consequat', 'mocyhamy@mailinator.com', '+1 (185) 758-5653', 'zipyg@mailinator.com', '$2y$10$c1itk6GhVK8IUjwvkecsGum4UHIDNvfwXx8rl8/IhuCAdaA169aD2', 'Totam enim mollit cu', 'Voluptatem Qui ea e', 'Commodi tempora aute', 'Voluptatem Omnis te', NULL, 'assets/backend/teacher/636c9d58c6c4adownload (2).jpg', '1', '2022-11-10 00:42:33', '2022-11-10 00:42:33'),
-(11, 4, 'Kay Strong', NULL, 'Ea impedit animi v', '2001-11-22', 'female', 'Atque voluptatibus u', 'demiwok@mailinator.com', '+1 (974) 861-8486', 'mixa@mailinator.com', '$2y$10$hPQHRughPYlvFFIRm4Srwu/c9UFvLQVOeMdAZTHrJsnNexboR7egO', 'Aut illum vel offic', 'Fugit cupidatat ani', 'Molestiae in omnis b', 'Molestiae illo magna', NULL, 'assets/backend/teacher/636c9d69ab8c4images (5).jpg', '1', '2022-11-10 00:42:50', '2022-11-10 00:42:50'),
-(12, 4, 'Maggie Vargas', NULL, 'Sapiente voluptatem', '2019-07-03', 'male', 'Sit quas repellendu', 'wefydil@mailinator.com', '+1 (698) 502-4025', 'xinysomeg@mailinator.com', '$2y$10$XnpQlV45yn9/X55CVfBZG.qnCAVPBEl0kDT1QO/KMJQnmmai5s7sW', 'Anim qui in quam nos', 'Vel ducimus obcaeca', 'Ullam cumque esse am', 'Cum in dolore impedi', NULL, 'assets/backend/teacher/636c9d7835851images (1).jpg', '1', '2022-11-10 00:43:04', '2022-11-10 00:43:04'),
-(13, 4, 'Josiah Oneill', NULL, 'Cupidatat in quidem', '2018-07-17', 'female', 'Consequatur consequ', 'piwofeqag@mailinator.com', '+1 (763) 464-5592', 'minyj@mailinator.com', '$2y$10$Om7tOvfhv31VAs9RkNkd5uvRvqiEYHU26.T0cxNEDR1InsO6W7dq.', 'Aut et aut voluptas', 'Expedita corporis ex', 'Animi enim in est e', 'Ex facere sit quaer', NULL, 'assets/backend/teacher/636c9d84173e5download (3).jpg', '1', '2022-11-10 00:43:16', '2022-11-10 00:43:16'),
-(14, 4, 'Hermione Pope', NULL, 'Vel dolorem dolore n', '2011-02-25', 'male', 'Molestias eius itaqu', 'moqisema@mailinator.com', '+1 (591) 125-4153', 'jefokimygi@mailinator.com', '$2y$10$r0CAfFfp4.M/CS71jMhlZehHZ3iVWHX7ZZ.5qqtzMlgxUp2m.kg/C', 'Quis voluptas cupida', 'Consequatur odio fug', 'Nemo harum quidem mi', 'Qui commodi velit er', NULL, 'assets/backend/teacher/636c9d906994adownload.jpg', '1', '2022-11-10 00:43:28', '2022-11-10 00:43:28'),
-(15, 4, 'Beatrice Burks', NULL, 'Dolore ullamco sint', '2008-03-23', 'male', 'Ea veritatis delectu', 'xigumo@mailinator.com', '+1 (536) 611-2682', 'qusesy@mailinator.com', '$2y$10$aDIHFmlipkhZtRt7tbZ2JOYsyAKxJnl1TyD6cKGWYDgqWg/wqCG92', 'Vero illum in aut l', 'Et ducimus consequa', 'Quia tempore in quo', 'Pariatur Expedita o', NULL, 'assets/backend/teacher/636c9d9ddc436images.jpg', '1', '2022-11-10 00:43:42', '2022-11-10 00:43:42'),
-(16, 4, 'Sakib', NULL, 'BSC', '2022-11-24', 'male', 'Dhaka', 'BSC', '01710528972', 'sakib@gmail.com', '$2y$10$4CiJXqrtEI/71t3U3Tkhx.1JAFgumEqNY0tdTWplVunhn8drdIIYm', 'Computer', 'dfsdfsdf', 'sdfsdf', 'sdfsdf', NULL, 'assets/backend/teacher/63764a764f29eimages (3).jpg', '1', '2022-11-17 08:51:34', '2022-11-17 08:51:34'),
-(17, 4, 'Sabbir', NULL, 'Msc', '2022-11-23', 'male', 'Dhakka', 'Nsc', '0171052789', 'sabbir@gmail.com', '$2y$10$asHRTSnnXxaHBD4YQMG0oeLdpa6MAm4o9xqAwcY88KRdzeOaabvKS', 'Msc', 'sgdsfg', 'sdgdg', 'sdgdsg', NULL, 'assets/backend/teacher/63764ed836140images (2).jpg', '1', '2022-11-17 09:10:16', '2022-11-17 09:10:16'),
-(18, 4, 'Accountant', NULL, 'Quia cillum non dolo', '2014-04-06', 'male', 'Minus impedit amet', 'Msc', '+1 (445) 537-8301', 'accountant@example.com', '$2y$10$hYG5zrwIA5yLYc6X8Q43Ae.gpUwkzL342ARQY6NnWBFiaOBnuY9U.', 'Adipisci ut voluptat', 'Suscipit ducimus ma', 'Perferendis ipsum qu', 'Pariatur Voluptatem', NULL, 'assets/backend/teacher/6379fdf9e3b43download.jpg', '1', '2022-11-20 04:14:18', '2022-11-20 04:14:18');
+INSERT INTO `teachers` (`id`, `role_id`, `name`, `school_id`, `designation`, `dob`, `gender`, `address`, `qualification`, `phone`, `email`, `password`, `salary`, `department`, `fb`, `twitter`, `linkden`, `subject`, `image`, `status`, `created_at`, `updated_at`) VALUES
+(1, 4, 'Nadine Deleon', NULL, 'Asperiores deleniti', '2007-01-04', 'male', 'Explicabo Sit dolor', 'vyxuhy@mailinator.com', '+1 (252) 907-7634', 'wuwejefep@mailinator.com', '$2y$10$b.H8RS4DqstGfkmkcVrhW.8/1odCE2NACXiKu6XiUZ8t/zzq9VllS', 30000.00, 'Mollitia tempora por', 'Esse cillum earum n', 'Sunt itaque et facer', 'Rerum qui provident', NULL, 'assets/backend/teacher/639746852b9e8download (3).jpg', '1', '2022-12-12 09:19:33', '2022-12-12 09:19:33'),
+(2, 4, 'Violet Sanchez', NULL, 'Iusto vel id optio', '1989-09-21', 'male', 'Adipisci impedit qu', 'kacuhupele@mailinator.com', '+1 (794) 772-5183', 'mysynufoza@mailinator.com', '$2y$10$mhx71V0uWnrt3abu8av5H.IQGBqHPDgLXaMUAqkWcReyuh1vH3/nq', 16500.00, 'Eum modi sit non eum', 'Minim proident aut', 'Nulla voluptatum Nam', 'Provident velit et', NULL, 'assets/backend/teacher/6397469ea4cc7images.jpg', '1', '2022-12-12 09:19:58', '2022-12-12 09:19:58'),
+(3, 4, 'Scott Hayden', NULL, 'Quibusdam id est o', '1983-03-10', 'male', 'Aliqua Ea fuga Sed', 'domenyna@mailinator.com', '+1 (535) 683-2121', 'safoga@mailinator.com', '$2y$10$JOxQTY2WVJtLsduzGXXCmOw9M64K8l6Bx0KvWj/Gq9mPik5BMPXCe', 15000.00, 'Ea in voluptas disti', 'Est sint dolor quia', 'Architecto neque est', 'Voluptates aliquid t', NULL, 'assets/backend/teacher/639746bb1a435images (2).jpg', '1', '2022-12-12 09:20:27', '2022-12-12 09:20:27'),
+(4, 4, 'Callie Marsh', NULL, 'Ullamco corporis nos', '1985-12-28', 'male', 'Cum quis deserunt co', 'retuke@mailinator.com', '+1 (504) 173-3271', 'nuqefovucy@mailinator.com', '$2y$10$zk1AYOxTZ2.ZTSCJwExakeIkDjSnRPQwRN1KIeTqAxlA2Gu0luoyO', 16000.00, 'Eum aliquid eiusmod', 'Consequat Sit aperi', 'Reprehenderit enim v', 'Velit exercitatione', NULL, 'assets/backend/teacher/639746d242499images (3).jpg', '1', '2022-12-12 09:20:50', '2022-12-12 09:20:50'),
+(5, 4, 'Yasir Montoya', NULL, 'Animi laborum Offi', '1987-11-19', 'male', 'Consequatur temporib', 'fovekoxik@mailinator.com', '+1 (422) 857-6726', 'lujaho@mailinator.com', '$2y$10$4o5d2nDRPOviZPAc.jDpvOncc2JnSgLij.IucGQ90UJmNq0HCKHT.', 18000.00, 'Eius nostrum consect', 'Sequi possimus cill', 'Neque enim ad omnis', 'Quibusdam aut aliqui', NULL, 'assets/backend/teacher/639746f18f878images (5).jpg', '1', '2022-12-12 09:21:21', '2022-12-12 09:21:21');
 
 -- --------------------------------------------------------
 
@@ -7043,18 +7856,130 @@ INSERT INTO `users` (`id`, `school_id`, `role_id`, `name`, `email`, `phone`, `im
 --
 
 --
+-- Indexes for table `2019-2020_3_students`
+--
+ALTER TABLE `2019-2020_3_students`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `2019-2020_4_students`
+--
+ALTER TABLE `2019-2020_4_students`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `2019-2020_5_students`
+--
+ALTER TABLE `2019-2020_5_students`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `2019-2020_7_students`
+--
+ALTER TABLE `2019-2020_7_students`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `2019-2020_8_students`
+--
+ALTER TABLE `2019-2020_8_students`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `2019-2020_9_students`
+--
+ALTER TABLE `2019-2020_9_students`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `2020-2021_2_students`
+--
+ALTER TABLE `2020-2021_2_students`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `2020-2021_3_students`
+--
+ALTER TABLE `2020-2021_3_students`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `2020-2021_4_students`
 --
 ALTER TABLE `2020-2021_4_students`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `2020_2021_4_students_student_id_foreign` (`student_id`);
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `2020-2021_5_students`
+--
+ALTER TABLE `2020-2021_5_students`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `2020-2021_6_students`
+--
+ALTER TABLE `2020-2021_6_students`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `2020-2021_7_students`
+--
+ALTER TABLE `2020-2021_7_students`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `2020-2021_10_students`
+--
+ALTER TABLE `2020-2021_10_students`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `2021-2022_2_students`
 --
 ALTER TABLE `2021-2022_2_students`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `2021_2022_2_students_student_id_foreign` (`student_id`);
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `2021-2022_4_attandence`
+--
+ALTER TABLE `2021-2022_4_attandence`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `2021-2022_4_students`
+--
+ALTER TABLE `2021-2022_4_students`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `2021-2022_6_students`
+--
+ALTER TABLE `2021-2022_6_students`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `2021-2022_7_students`
+--
+ALTER TABLE `2021-2022_7_students`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `2021-2022_8_students`
+--
+ALTER TABLE `2021-2022_8_students`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `2021-2022_9_students`
+--
+ALTER TABLE `2021-2022_9_students`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `2021-2022_10_students`
+--
+ALTER TABLE `2021-2022_10_students`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `accountants`
@@ -7066,6 +7991,12 @@ ALTER TABLE `accountants`
 -- Indexes for table `admin_resets`
 --
 ALTER TABLE `admin_resets`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `assignments`
+--
+ALTER TABLE `assignments`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -7105,15 +8036,15 @@ ALTER TABLE `courses`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `create_marks_1_students`
+-- Indexes for table `credit_funds`
 --
-ALTER TABLE `create_marks_1_students`
+ALTER TABLE `credit_funds`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `create_marks_2_students`
+-- Indexes for table `deposits`
 --
-ALTER TABLE `create_marks_2_students`
+ALTER TABLE `deposits`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -7136,6 +8067,12 @@ ALTER TABLE `education_qualifications`
   ADD KEY `education_qualifications_student_id_foreign` (`student_id`);
 
 --
+-- Indexes for table `employee_salaries`
+--
+ALTER TABLE `employee_salaries`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `events`
 --
 ALTER TABLE `events`
@@ -7154,11 +8091,43 @@ ALTER TABLE `exam_lists`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `expances`
+--
+ALTER TABLE `expances`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `expancesive_lists`
+--
+ALTER TABLE `expancesive_lists`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `expancesive_lists_email_unique` (`email`);
+
+--
+-- Indexes for table `expenses`
+--
+ALTER TABLE `expenses`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `expense_partculers`
+--
+ALTER TABLE `expense_partculers`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `expense_partculers_expense_id_foreign` (`expense_id`);
+
+--
 -- Indexes for table `failed_jobs`
 --
 ALTER TABLE `failed_jobs`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `failed_jobs_uuid_unique` (`uuid`);
+
+--
+-- Indexes for table `funds`
+--
+ALTER TABLE `funds`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `galleries`
@@ -7231,6 +8200,12 @@ ALTER TABLE `lost_inventories`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `main_heads`
+--
+ALTER TABLE `main_heads`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `migrations`
 --
 ALTER TABLE `migrations`
@@ -7248,6 +8223,40 @@ ALTER TABLE `modules`
 --
 ALTER TABLE `notices`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `oauth_access_tokens`
+--
+ALTER TABLE `oauth_access_tokens`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `oauth_access_tokens_user_id_index` (`user_id`);
+
+--
+-- Indexes for table `oauth_auth_codes`
+--
+ALTER TABLE `oauth_auth_codes`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `oauth_auth_codes_user_id_index` (`user_id`);
+
+--
+-- Indexes for table `oauth_clients`
+--
+ALTER TABLE `oauth_clients`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `oauth_clients_user_id_index` (`user_id`);
+
+--
+-- Indexes for table `oauth_personal_access_clients`
+--
+ALTER TABLE `oauth_personal_access_clients`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `oauth_refresh_tokens`
+--
+ALTER TABLE `oauth_refresh_tokens`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `oauth_refresh_tokens_access_token_id_index` (`access_token_id`);
 
 --
 -- Indexes for table `online_admissions`
@@ -7322,11 +8331,17 @@ ALTER TABLE `social_settings`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `staff_manages`
+--
+ALTER TABLE `staff_manages`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `staff_manages_email_unique` (`email`);
+
+--
 -- Indexes for table `students`
 --
 ALTER TABLE `students`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `students_email_unique` (`email`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `subjects`
@@ -7384,28 +8399,148 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `2019-2020_3_students`
+--
+ALTER TABLE `2019-2020_3_students`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `2019-2020_4_students`
+--
+ALTER TABLE `2019-2020_4_students`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `2019-2020_5_students`
+--
+ALTER TABLE `2019-2020_5_students`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `2019-2020_7_students`
+--
+ALTER TABLE `2019-2020_7_students`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `2019-2020_8_students`
+--
+ALTER TABLE `2019-2020_8_students`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `2019-2020_9_students`
+--
+ALTER TABLE `2019-2020_9_students`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `2020-2021_2_students`
+--
+ALTER TABLE `2020-2021_2_students`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `2020-2021_3_students`
+--
+ALTER TABLE `2020-2021_3_students`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `2020-2021_4_students`
 --
 ALTER TABLE `2020-2021_4_students`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `2020-2021_5_students`
+--
+ALTER TABLE `2020-2021_5_students`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `2020-2021_6_students`
+--
+ALTER TABLE `2020-2021_6_students`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `2020-2021_7_students`
+--
+ALTER TABLE `2020-2021_7_students`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `2020-2021_10_students`
+--
+ALTER TABLE `2020-2021_10_students`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `2021-2022_2_students`
 --
 ALTER TABLE `2021-2022_2_students`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `2021-2022_4_attandence`
+--
+ALTER TABLE `2021-2022_4_attandence`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `2021-2022_4_students`
+--
+ALTER TABLE `2021-2022_4_students`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `2021-2022_6_students`
+--
+ALTER TABLE `2021-2022_6_students`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `2021-2022_7_students`
+--
+ALTER TABLE `2021-2022_7_students`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `2021-2022_8_students`
+--
+ALTER TABLE `2021-2022_8_students`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `2021-2022_9_students`
+--
+ALTER TABLE `2021-2022_9_students`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `2021-2022_10_students`
+--
+ALTER TABLE `2021-2022_10_students`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `accountants`
 --
 ALTER TABLE `accountants`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `admin_resets`
 --
 ALTER TABLE `admin_resets`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- AUTO_INCREMENT for table `assignments`
+--
+ALTER TABLE `assignments`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `banners`
@@ -7429,7 +8564,7 @@ ALTER TABLE `classes`
 -- AUTO_INCREMENT for table `class_routines`
 --
 ALTER TABLE `class_routines`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=74;
 
 --
 -- AUTO_INCREMENT for table `contacts`
@@ -7444,16 +8579,16 @@ ALTER TABLE `courses`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table `create_marks_1_students`
+-- AUTO_INCREMENT for table `credit_funds`
 --
-ALTER TABLE `create_marks_1_students`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+ALTER TABLE `credit_funds`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `create_marks_2_students`
+-- AUTO_INCREMENT for table `deposits`
 --
-ALTER TABLE `create_marks_2_students`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+ALTER TABLE `deposits`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `districts`
@@ -7471,7 +8606,13 @@ ALTER TABLE `divisions`
 -- AUTO_INCREMENT for table `education_qualifications`
 --
 ALTER TABLE `education_qualifications`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `employee_salaries`
+--
+ALTER TABLE `employee_salaries`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `events`
@@ -7483,7 +8624,7 @@ ALTER TABLE `events`
 -- AUTO_INCREMENT for table `exam_grades`
 --
 ALTER TABLE `exam_grades`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `exam_lists`
@@ -7492,10 +8633,40 @@ ALTER TABLE `exam_lists`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
+-- AUTO_INCREMENT for table `expances`
+--
+ALTER TABLE `expances`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `expancesive_lists`
+--
+ALTER TABLE `expancesive_lists`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `expenses`
+--
+ALTER TABLE `expenses`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `expense_partculers`
+--
+ALTER TABLE `expense_partculers`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `failed_jobs`
 --
 ALTER TABLE `failed_jobs`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `funds`
+--
+ALTER TABLE `funds`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `galleries`
@@ -7549,7 +8720,7 @@ ALTER TABLE `issu_books`
 -- AUTO_INCREMENT for table `librarians`
 --
 ALTER TABLE `librarians`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `library_books`
@@ -7564,10 +8735,16 @@ ALTER TABLE `lost_inventories`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
+-- AUTO_INCREMENT for table `main_heads`
+--
+ALTER TABLE `main_heads`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=158;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=192;
 
 --
 -- AUTO_INCREMENT for table `modules`
@@ -7580,6 +8757,18 @@ ALTER TABLE `modules`
 --
 ALTER TABLE `notices`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT for table `oauth_clients`
+--
+ALTER TABLE `oauth_clients`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `oauth_personal_access_clients`
+--
+ALTER TABLE `oauth_personal_access_clients`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `online_admissions`
@@ -7597,13 +8786,13 @@ ALTER TABLE `permissions`
 -- AUTO_INCREMENT for table `permission_role`
 --
 ALTER TABLE `permission_role`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=190;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=193;
 
 --
 -- AUTO_INCREMENT for table `personal_access_tokens`
 --
 ALTER TABLE `personal_access_tokens`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `quotes`
@@ -7627,7 +8816,7 @@ ALTER TABLE `school_sections`
 -- AUTO_INCREMENT for table `sections`
 --
 ALTER TABLE `sections`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `session_years`
@@ -7642,10 +8831,16 @@ ALTER TABLE `social_settings`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
+-- AUTO_INCREMENT for table `staff_manages`
+--
+ALTER TABLE `staff_manages`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT for table `students`
 --
 ALTER TABLE `students`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT for table `subjects`
@@ -7663,7 +8858,7 @@ ALTER TABLE `supplier_invoices`
 -- AUTO_INCREMENT for table `teachers`
 --
 ALTER TABLE `teachers`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `thanas`
@@ -7700,22 +8895,16 @@ ALTER TABLE `users`
 --
 
 --
--- Constraints for table `2020-2021_4_students`
---
-ALTER TABLE `2020-2021_4_students`
-  ADD CONSTRAINT `2020_2021_4_students_student_id_foreign` FOREIGN KEY (`student_id`) REFERENCES `students` (`id`) ON DELETE CASCADE;
-
---
--- Constraints for table `2021-2022_2_students`
---
-ALTER TABLE `2021-2022_2_students`
-  ADD CONSTRAINT `2021_2022_2_students_student_id_foreign` FOREIGN KEY (`student_id`) REFERENCES `students` (`id`) ON DELETE CASCADE;
-
---
 -- Constraints for table `education_qualifications`
 --
 ALTER TABLE `education_qualifications`
   ADD CONSTRAINT `education_qualifications_student_id_foreign` FOREIGN KEY (`student_id`) REFERENCES `students` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `expense_partculers`
+--
+ALTER TABLE `expense_partculers`
+  ADD CONSTRAINT `expense_partculers_expense_id_foreign` FOREIGN KEY (`expense_id`) REFERENCES `expenses` (`id`) ON DELETE CASCADE;
 
 --
 -- Constraints for table `gallery_images`
