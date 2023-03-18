@@ -144,26 +144,26 @@
                                                 <form id="update_form" method="post" action="{{ route('admin.frontend.gallery.update') }}" enctype="multipart/form-data">
                                                     @csrf
 
-                                                    <div class="col-1-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                                                    <div class=" col-xl-12 col-lg-12 col-12 form-group">
                                                         <label for="exampleInputEmail1">Title</label>
                                                         <input type="hidden" class="form-control" name="id" value="{{ $gallery->id }}" >
                                                         <input type="text" class="form-control" name="title" value="{{ $gallery->title }}" >
 
                                                     </div>
 
-                                                    <div class="col-1-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                                                    <div class=" col-xl-12 col-lg-12 col-12 form-group">
                                                         <label for="exampleInputEmail1">Title Image</label>
                                                         <input type="file" class="form-control" name="title_image" value="" onchange="loadFile_{{$gallery->id}}(event)">
 
                                                     </div>
-                                                     <div class="col-1-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                                                     <div class=" col-xl-12 col-lg-12 col-12 form-group">
 
                                                         <img src="{{asset($gallery->title_image)}}" alt="" id="output_{{$gallery->id}}"  width="100px" height="200px">
 
                                                     </div>
 
 
-                                                    <div class="col-1-xxxl col-xl-2 col-lg-3 col-12 form-group">
+                                                    <div class=" col-xl-2 col-lg-3 col-12 form-group">
                                                         <button type="submit" class="fw-btn-fill btn-gradient-yellow">Update</button>
                                                     </div>
 
@@ -196,7 +196,7 @@
                                                @php($galleries = \App\Models\GalleryImage::where('gallery_id',$gallery->id)->get())
                                                <div class="row d-flex justify-content-center align-items-center g-3 mt-5">
                                                     @foreach($galleries as $single_gallery)
-                                                      <div class="col-1-xxxl col-xl-3 col-lg-3 col-12 form-group">
+                                                      <div class=" col-xl-3 col-lg-3 col-12 form-group">
                                                         <div class="custom-img">
                                                              <img
                                                               class="imf-fluid img mb-4"
@@ -213,17 +213,17 @@
 
                                                     @endforeach
 
-                                                    <div class="col-1-xxxl col-xl-3 col-lg-3 col-12 form-group">
+                                                    <div class=" col-xl-3 col-lg-3 col-12 form-group">
 
                                                             <div class="card">
                                                                <form action="{{ route('admin.frontend.gallery.add') }}" method="POST" enctype="multipart/form-data">
                                                                 @csrf
-                                                                    <div class="col-1-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                                                                    <div class=" col-xl-12 col-lg-12 col-12 form-group">
                                                                         <label for="gallImage" class="upload-gallery mt-4 pl-4">Image Upload</label>
                                                                         <input type="hidden" name="id" value="{{ $gallery->id }}">
                                                                         <input type="file" id="gallImage" class="d-none" name="gallery_image[]" multiple>
                                                                     </div>
-                                                                    <div class="col-1-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                                                                    <div class=" col-xl-12 col-lg-12 col-12 form-group">
                                                                         <button type="submit" class="fw-btn-fill btn-gradient-yellow">Upload</button>
                                                                     </div>
                                                                </form>
@@ -262,13 +262,13 @@
                     <form id="contact_form" method="post" action="{{route('admin.frontend.gallery.save')}}" enctype="multipart/form-data">
                         @csrf
 
-                        <div class="col-1-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                        <div class=" col-xl-12 col-lg-12 col-12 form-group">
                             <label for="exampleInputEmail1">Title</label>
                             <input type="text" class="form-control" name="title" value="" >
 
                         </div>
 
-                        <div class="col-1-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                        <div class=" col-xl-12 col-lg-12 col-12 form-group">
                             <label for="exampleInputEmail1">Title Image</label>
                             <input type="file" class="form-control" name="title_image" value="" />
 
@@ -280,7 +280,7 @@
 
                         </div> --}}
 
-                        <div class="col-1-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                        <div class=" col-xl-12 col-lg-12 col-12 form-group">
                             <label for="exampleInputPassword1">Gallery Image</label>
                             <input type="file" class="form-control" name="gallery_image[]" multiple  >
 
@@ -288,7 +288,7 @@
 
 
 
-                        <div class="col-1-xxxl col-xl-2 col-lg-3 col-12 form-group">
+                        <div class=" col-xl-2 col-lg-3 col-12 form-group">
                             <button type="submit" class="fw-btn-fill btn-gradient-yellow">Save</button>
                         </div>
 

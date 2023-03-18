@@ -23,7 +23,7 @@
             @csrf
             <div class="card-body">
 
-                <div class="col-4-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                <div class=" col-xl-12 col-lg-12 col-12 form-group">
                     <label class="control-label" for="app_name">School Name</label>
                     <input
                         class="form-control"
@@ -35,7 +35,7 @@
                     />
                 </div>
 
-                <div class="col-4-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                <div class=" col-xl-12 col-lg-12 col-12 form-group">
                     <label>Short Description</label>
                     <textarea
                         class="form-control"
@@ -46,7 +46,7 @@
                         value=""
                     >{!! $school->short_description !!}</textarea>
                 </div>
-                <div class="col-4-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                <div class=" col-xl-12 col-lg-12 col-12 form-group">
                     <label>Top Description</label>
                     <textarea
                         class="form-control"
@@ -57,7 +57,7 @@
                         value=""
                     >{!! $school->top_description !!}</textarea>
                 </div>
-                <div class="col-4-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                <div class=" col-xl-12 col-lg-12 col-12 form-group">
                     <label>Bottom Description</label>
                     <textarea
                         class="form-control"
@@ -69,14 +69,14 @@
                     >{!! $school->bottom_description !!}</textarea>
                 </div>
 
-                <div class="col-4-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                <div class=" col-xl-12 col-lg-12 col-12 form-group">
                     <div class="row">
-                        <div class="col-4-xxxl col-xl-6 col-lg-6 col-12 form-group">
+                        <div class=" col-xl-6 col-lg-6 col-12 form-group">
                             <div class="image-upload">
                                 <div class="thumb">
                                     <div class="avatar-preview">
                                         <div class="row">
-                                            <div class="col-4-xxxl col-xl-6 col-lg-6 col-12 form-group">
+                                            <div class=" col-xl-6 col-lg-6 col-12 form-group">
 
                                                 @if (!empty($school->title_image))
                                                     <img class="img-thumbnail"
@@ -91,7 +91,7 @@
     {{--                                                <span class="font-weight-bold text-danger small">Size should be 512 X 512 </span>--}}
                                                 </div>
                                             </div>
-                                            <div class="col-4-xxxl col-xl-6 col-lg-6 col-12 form-group">
+                                            <div class=" col-xl-6 col-lg-6 col-12 form-group">
                                                 @if (!empty($school->middle_image))
                                                     <img class="img-thumbnail"
                                                          src="{{asset($school->middle_image)}}"
@@ -116,7 +116,7 @@
                 </div>
 
 
-                <div class="col-4-xxxl col-xl-2 col-lg-3 col-12 form-group">
+                <div class=" col-xl-2 col-lg-3 col-12 form-group">
                     <button type="submit" class="fw-btn-fill btn-gradient-yellow">Save Changes</button>
                 </div>
             </div>

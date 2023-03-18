@@ -73,16 +73,16 @@
                                             <div class="modal-body">
                                                 <form id="class_form2" method="post" action="{{route('admin.class.update')}}" enctype="multipart/form-data">
                                                     @csrf
-                                                    <div class="col-1-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                                                    <div class=" col-xl-12 col-lg-12 col-12 form-group">
                                                         <label for="tradeTitle">Class Name</label>
                                                         <input type="text" name="class_name" value="{{$class->class_name}}" class="form-control" placeholder="Class Name" id="courseTitle">
-                                                        <input type="hidden" name="id" value="{{$class->id}}" class="form-control" >
+                                                        <input type="hidden" name="id" value="{{$class->id}}" class="form-control" />
                                                     </div>
-                                                    <div class="col-1-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                                                    <div class="col-xl-12 col-lg-12 col-12 form-group">
                                                         <label for="tradeTitle">Class Name Numeric</label>
                                                         <input type="number" name="class_name_numeric" value="{{$class->class_name_numeric}}" class="form-control" placeholder="Class Name Numeric" id="courseTitle2">
                                                     </div>
-                                                    <div class="col-1-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                                                    <div class=" col-xl-12 col-lg-12 col-12 form-group">
                                                         <label for="tradeCode">Class Teacher</label>
                                                         <select class="form-control" name="class_teacher">
                                                             <option value="1" {{$class->teacher_id == 1 ? "Selected" : ""}}>Demo Teacher 1</option>
@@ -90,7 +90,7 @@
                                                         </select>
                                                     </div>
 
-                                                    <div class="col-1-xxxl col-xl-4 col-lg-5 col-12 form-group">
+                                                    <div class=" col-xl-4 col-lg-5 col-12 form-group">
                                                         <input type="submit" class="fw-btn-fill btn-gradient-yellow" value="Update Class">
                                                     </div>
                                                 </form>
@@ -120,15 +120,15 @@
                 <div class="modal-body">
                     <form id="class_form" method="post" action="{{route('admin.class.add')}}" enctype="multipart/form-data">
                         @csrf
-                        <div class="col-1-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                        <div class=" col-xl-12 col-lg-12 col-12 form-group">
                             <label for="tradeTitle">Class Name</label>
                             <input type="text" name="class_name" class="form-control" placeholder="Class Name" id="courseTitle">
                         </div>
-                        <div class="col-1-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                        <div class=" col-xl-12 col-lg-12 col-12 form-group">
                             <label for="tradeTitle">Class Name Numeric</label>
                             <input type="number" name="class_name_numeric" class="form-control" placeholder="Class Name Numeric" id="courseTitle2">
                         </div>
-                        <div class="col-1-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                        <div class=" col-xl-12 col-lg-12 col-12 form-group">
                             <label for="tradeCode">Class Teacher</label>
                             <select class="form-control" name="class_teacher">
                                 <option value="1">Demo Teacher 1</option>
@@ -136,7 +136,7 @@
                             </select>
                         </div>
 
-                        <div class="col-1-xxxl col-xl-5 col-lg-5 col-12 form-group">
+                        <div class=" col-xl-5 col-lg-5 col-12 form-group">
                             <input type="submit" class="fw-btn-fill btn-gradient-yellow" value="Add Class">
                         </div>
                     </form>

@@ -113,31 +113,31 @@
                                                     @csrf
 
 
-                                                    <div class="col-1-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                                                    <div class=" col-xl-12 col-lg-12 col-12 form-group">
                                                         <label for="exampleInputEmail1">Name</label>
                                                         <input type="text" class="form-control" required name="name" value="{{$message->name}}" >
                                                         <input type="hidden" class="form-control" required name="id" value="{{$message->id}}" >
 
                                                     </div>
 
-                                                    <div class="col-1-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                                                    <div class=" col-xl-12 col-lg-12 col-12 form-group">
                                                         <label for="exampleInputEmail1">Message</label>
                                                         <textarea type="text" class="form-control" name="message" required style="height: 20px" id="editor_{{$message->id}}" >{!!$message->quotes  !!}</textarea>
 
                                                     </div>
-                                                    <div class="col-1-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                                                    <div class=" col-xl-12 col-lg-12 col-12 form-group">
                                                         <label for="exampleInputPassword1">Designation</label>
                                                         <input type="text" class="form-control" name="designation" required value="{{$message->designation}}">
 
                                                     </div>
-                                                    <div class="col-1-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                                                    <div class=" col-xl-12 col-lg-12 col-12 form-group">
                                                         <label for="exampleInputPassword1">Education Details</label>
                                                         <input type="text" class="form-control" name="education_details" required value="{{$message->education}}">
 
                                                     </div>
 
 
-                                                    <div class="col-1-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                                                    <div class=" col-xl-12 col-lg-12 col-12 form-group">
                                                         <label for="exampleInputPassword1">Image</label>
                                                         <input type="file" class="form-control" name="image"  onchange="loadFile_{{$message ->id}}(event)" >
                                                         @if($message->image)
@@ -149,7 +149,7 @@
 
                                                     </div>
 
-                                                    <div class="col-1-xxxl col-xl-2 col-lg-3 col-12 form-group">
+                                                    <div class=" col-xl-2 col-lg-3 col-12 form-group">
                                                         <button type="submit" class="fw-btn-fill btn-gradient-yellow">Update</button>
                                                     </div>
 
@@ -197,30 +197,30 @@
                     <form id="contact_form" method="post" action="{{route('admin.frontend.message.save')}}" enctype="multipart/form-data">
                         @csrf
 
-                        <div class="col-1-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                        <div class=" col-xl-12 col-lg-12 col-12 form-group">
                             <label for="exampleInputEmail1">Name</label>
                             <input type="text" class="form-control" name="name" value="" >
 
                         </div>
 
-                        <div class="col-1-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                        <div class=" col-xl-12 col-lg-12 col-12 form-group">
                             <label for="exampleInputEmail1">Message</label>
                             <textarea type="text" class="form-control" name="message" style="height: 20px" id="editor" ></textarea>
 
                         </div>
-                        <div class="col-1-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                        <div class=" col-xl-12 col-lg-12 col-12 form-group">
                             <label for="exampleInputPassword1">Designation</label>
                             <input type="text" class="form-control" name="designation" required>
 
                         </div>
-                        <div class="col-1-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                        <div class=" col-xl-12 col-lg-12 col-12 form-group">
                             <label for="exampleInputPassword1">Education Details</label>
                             <input type="text" class="form-control" name="education_details" required>
 
                         </div>
 
 
-                        <div class="col-1-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                        <div class=" col-xl-12 col-lg-12 col-12 form-group">
                             <label for="exampleInputPassword1">Image</label>
                             <input type="file" class="form-control" name="image"  onchange="loadFile(event)" >
                             <img src="{{asset('assets/backend/img/default.jpg')}}" alt="" width="150px" height="150px" id="output">
@@ -228,7 +228,7 @@
                         </div>
 
 
-                        <div class="col-1-xxxl col-xl-3 col-lg-3 col-12 form-group">
+                        <div class=" col-xl-3 col-lg-3 col-12 form-group">
                             <button type="submit" class="fw-btn-fill btn-gradient-yellow">Save</button>
                         </div>
 

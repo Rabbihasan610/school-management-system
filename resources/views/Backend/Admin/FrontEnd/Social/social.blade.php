@@ -80,20 +80,20 @@
                                             <div class="modal-body">
                                                 <form id="update_form" method="post" action="{{ route('admin.frontend.social.update') }}" enctype="multipart/form-data">
                                                     @csrf
-                                                    <div class="col-4-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                                                    <div class=" col-xl-12 col-lg-12 col-12 form-group">
 							                            <label for="exampleInputEmail1">Social Title</label>
 							                            <input type="hidden" class="form-control" name="id" value="{{ $social->id }}" required >
 							                            <input type="text" class="form-control" name="title" value="{{ $social->title }}">
 							                        </div>
-                                                    <div class="col-4-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                                                    <div class=" col-xl-12 col-lg-12 col-12 form-group">
                                                         <label for="exampleInputEmail1">Social Icon code</label>
                                                         <input type="text" class="form-control" name="icon" value="{{ $social->icon }}" >
                                                     </div>
-                                                    <div class="col-4-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                                                    <div class=" col-xl-12 col-lg-12 col-12 form-group">
                                                         <label for="exampleInputPassword1">Social Url</label>
                                                         <input type="text" class="form-control" name="social_url" required value="{{$social->url}}">
                                                     </div>
-                                                    <div class="col-4-xxxl col-xl-3 col-lg-3 col-12 form-group">
+                                                    <div class=" col-xl-3 col-lg-3 col-12 form-group">
                                                         <button type="submit" class="fw-btn-fill btn-gradient-yellow">Update</button>
                                                     </div>
 
@@ -124,19 +124,19 @@
                     <form id="social_settings_form" method="post" action="{{ route('admin.frontend.social.save') }}" enctype="multipart/form-data">
                         @csrf
 
-                        <div class="col-4-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                        <div class=" col-xl-12 col-lg-12 col-12 form-group">
                             <label for="exampleInputEmail1">Social Title</label>
                             <input type="text" class="form-control" name="title" required>
                         </div>
-                        <div class="col-4-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                        <div class=" col-xl-12 col-lg-12 col-12 form-group">
                             <label for="exampleInputEmail1">Icon Code</label>
                             <input type="text" class="form-control" name="icon" required>
                         </div>
-                        <div class="col-4-xxxl col-xl-12 col-lg-12 col-12 form-group">
+                        <div class=" col-xl-12 col-lg-12 col-12 form-group">
                             <label for="exampleInputPassword1">Social Icon Url</label>
                             <input type="text" class="form-control" name="social_url" required>
                         </div>
-                        <div class="col-4-xxxl col-xl-3 col-lg-3 col-12 form-group">
+                        <div class=" col-xl-3 col-lg-3 col-12 form-group">
                             <button type="submit" class="fw-btn-fill btn-gradient-yellow">Save</button>
                         </div>
 
